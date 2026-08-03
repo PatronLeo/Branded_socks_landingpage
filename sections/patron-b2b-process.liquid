@@ -1,0 +1,117 @@
+{%- render 'section-spacing-collapsing' -%}
+
+<style>
+  #shopify-section-{{ section.id }} .patron-process-shell {
+    width: min(var(--container-max-width), calc(100% - 40px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    gap: var(--spacing-12);
+    align-items: center;
+  }
+  #shopify-section-{{ section.id }} .patron-process-media {
+    position: relative;
+    min-height: 620px;
+    overflow: hidden;
+    border-radius: var(--rounded-lg);
+    background: rgb(var(--text-color) / .06);
+  }
+  #shopify-section-{{ section.id }} .patron-process-media img,
+  #shopify-section-{{ section.id }} .patron-process-media video {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  }
+  #shopify-section-{{ section.id }} .patron-process-list { margin-top: var(--spacing-8); }
+  #shopify-section-{{ section.id }} .patron-process-step {
+    display: grid; grid-template-columns: 48px minmax(0,1fr); gap: var(--spacing-5);
+    padding-block: var(--spacing-5); border-bottom: 1px solid rgb(var(--text-color) / .12);
+  }
+  #shopify-section-{{ section.id }} .patron-process-number {
+    width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+    background: rgb(var(--text-color)); color: rgb(var(--background)); font-weight: 700;
+  }
+  #shopify-section-{{ section.id }} .patron-process-step h3 { margin: 0 0 6px; }
+  #shopify-section-{{ section.id }} .patron-process-step p { margin: 0; opacity: .68; font-size: var(--text-sm); }
+  @media screen and (max-width: 999px) {
+    #shopify-section-{{ section.id }} .patron-process-shell { grid-template-columns: 1fr; }
+    #shopify-section-{{ section.id }} .patron-process-media { min-height: 480px; }
+  }
+  @media screen and (max-width: 699px) {
+    #shopify-section-{{ section.id }} .patron-process-shell { width: min(100% - 24px, var(--container-max-width)); }
+    #shopify-section-{{ section.id }} .patron-process-media { min-height: 380px; }
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  <div class="patron-process-shell">
+    <div class="patron-process-media" reveal-on-scroll="true">
+      {%- if section.settings.video != blank -%}
+        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
+      {%- elsif section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '600,900,1200,1600', sizes: '(max-width: 999px) 100vw, 48vw' }}
+      {%- else -%}
+        {{ 'product-1' | placeholder_svg_tag: 'placeholder' }}
+      {%- endif -%}
+    </div>
+
+    <div>
+      <div class="prose">
+        {%- if section.settings.subheading != blank -%}<p class="subheading">{{ section.settings.subheading | escape }}</p>{%- endif -%}
+        <h2 class="h2">{% render 'styled-text', content: section.settings.title, gradient: section.settings.heading_gradient %}</h2>
+        {{ section.settings.content }}
+      </div>
+
+      <div class="patron-process-list">
+        {%- for block in section.blocks -%}
+          <div class="patron-process-step" {{ block.shopify_attributes }}>
+            <span class="patron-process-number">{{ forloop.index }}</span>
+            <div>
+              <h3 class="h5">{{ block.settings.title }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Patron – Ablauf",
+  "class": "shopify-section--patron-process",
+  "tag": "section",
+  "settings": [
+    {"type":"checkbox","id":"full_width","label":"Full width","default":true},
+    {"type":"color","id":"background","label":"Background","default":"#ffffff"},
+    {"type":"color_background","id":"background_gradient","label":"Background gradient"},
+    {"type":"color","id":"text_color","label":"Text","default":"#121212"},
+    {"type":"text","id":"subheading","label":"Subheading","default":"Von der Idee bis zum Empfänger"},
+    {"type":"text","id":"title","label":"Heading","default":"Ein Prozess. Ein Ansprechpartner."},
+    {"type":"richtext","id":"content","label":"Content","default":"<p>Design, Produktion, Geschenkset, Konfektionierung und Versand aus einer Hand.</p>"},
+    {"type":"video","id":"video","label":"Shopify video"},
+    {"type":"image_picker","id":"image","label":"Fallback image"},
+    {"type":"color_background","id":"heading_gradient","label":"Heading gradient"}
+  ],
+  "blocks": [
+    {
+      "type":"step","name":"Step","limit":7,
+      "settings":[
+        {"type":"text","id":"title","label":"Title","default":"Logo & Anlass"},
+        {"type":"textarea","id":"text","label":"Text","default":"Ihr sendet Logo, Stückzahl und Einsatzzweck."}
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Patron – Ablauf",
+      "blocks":[
+        {"type":"step","settings":{"title":"Logo & Anlass","text":"Ihr sendet Logo, Stückzahl und Einsatzzweck."}},
+        {"type":"step","settings":{"title":"Kostenloser Designvorschlag","text":"Wir übersetzen eure Marke in ein sockentaugliches Design."}},
+        {"type":"step","settings":{"title":"Produktion & Verpackung","text":"Socken, Banderolen, Boxen und Beigaben werden umgesetzt."}},
+        {"type":"step","settings":{"title":"Konfektionierung","text":"Flyer, Gutscheine, Anschreiben und Werbemittel werden beigelegt."}},
+        {"type":"step","settings":{"title":"Direktversand","text":"Einzelversand oder Sammellieferung zum Wunschtermin."}}
+      ]
+    }
+  ]
+}
+{% endschema %}

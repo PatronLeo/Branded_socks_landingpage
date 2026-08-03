@@ -1,0 +1,69 @@
+{
+  "type": "custom.overlay",
+  "name": "Overlay group",
+  "sections": {
+    "newsletter-popup": {
+      "type": "newsletter-popup",
+      "disabled": true,
+      "settings": {
+        "apparition_delay": 5,
+        "show_only_on_index": true,
+        "show_only_for_visitors": true,
+        "show_only_once": true,
+        "title": "Signup for our newsletter",
+        "button_text": "Subscribe",
+        "subtext": "Describe what your customers will receive when subscribing to your newsletter."
+      }
+    },
+    "privacy-banner": {
+      "type": "privacy-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "privacy_bar_title": "Datenschutzeinstellungen",
+        "privacy_bar_content": "<p>Wir verwenden Cookies und andere Technologien zur Personalisierung Ihres Nutzererlebnisses sowie für Marketing- und Analysezwecke. Erfahren Sie mehr in unserer <a href=\"https:\/\/patronsocks.myshopify.com\/policies\/privacy-policy\" target=\"_blank\">Datenschutzerklärung.<\/a><\/p>"
+      }
+    },
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "settings": {
+        "show_cart_note": false,
+        "show_shipping_text": true,
+        "show_view_cart_button": false,
+        "show_checkout_button": true,
+        "recommendations_title": "Das könnte dir auch gefallen",
+        "products": [
+          "herz-sportsocken",
+          "zwinker-smile-sportsocken",
+          "dom-sportsocken",
+          "kolsch-sportsocken",
+          "6er-pack-dom-sneaker-socken-schwarz-weiss",
+          "dom-fuesslinge",
+          "business-socken",
+          "cinque-socken-breite-streifen",
+          "cinque-socken",
+          "faultier-socken"
+        ],
+        "product_card_background": "#f2f2f2",
+        "product_card_text_color": "",
+        "checkout_button_color": "#6ed972",
+        "show_payment_icons": true
+      }
+    },
+    "search-drawer": {
+      "type": "search-drawer",
+      "settings": {
+        "full_width": false,
+        "show_article_category": true,
+        "search_menu": "",
+        "search_menu_show_title": true
+      }
+    }
+  },
+  "order": [
+    "newsletter-popup",
+    "privacy-banner",
+    "cart-drawer",
+    "search-drawer"
+  ]
+}

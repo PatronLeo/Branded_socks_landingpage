@@ -1,0 +1,169 @@
+{
+  "sections": {
+    "image_with_text_overlay_JbKCaH": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_DpgpEw": {
+          "type": "subheading",
+          "settings": {
+            "text": "Styling Tipps für Bunte Socken"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DpgpEw"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify:\/\/shop_images\/PatronSocksDario-14_Kopie_2.jpg",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "media_with_text_AFnWcq": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_GeirF4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18-ADW01271-3_web-2_jpg.webp",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "BUNTE SOCKEN SIND COOL, STRAHLEN KOMPETENZ UND ERFOLG AUS.",
+            "title": "",
+            "content": "<p>Bunte Socken sind längst in der Herrenmodewelt angekommen und schon lange kein Tabu mehr. Vor einigen Jahren fast ausschließlich nur im Casual Bereich vorzufinden, bekennt der mutige Mann auch in der Businesswelt immer mehr Farbe und setzt mit bunten Socken Akzente. Vor allem Männer sehen in diesem Socken-Trend eine Möglichkeit, den sonst so eingeschränkten Dresscode in der Arbeit oder auf Events etwas aufzulockern und die eigene Persönlichkeit zu unterstreichen. <\/p><p>Noch ein interessanter Aspekt: Gemäß der Studie <strong>“The Red Sneaker Effekt“ <\/strong>der Harvard Businesss School wirken Männer mit bunten Socken kompetenter, cooler und erfolgreicher. <\/p>",
+            "link_text": "",
+            "link_url": "",
+            "rating_name": "",
+            "rating_text": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_aLMFkq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PATRON-SOCKS-Hipster-gestreifte-Socken.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "ABER WIE TRÄGT MAN BUNTE SOCKEN?",
+            "title": "",
+            "content": "<p>Im privaten Alltag gibt es schier unendliche Kombinationsmöglichkeiten und der Fantasie sind keine Grenzen gesetzt. Damit die bunten Socken richtig zur Geltung kommen und das Freizeit Outfit sportlicher wirkt, empfiehlt Patron Socks z.B. Jeans und Chinos zu krempeln.<\/p><p>Wer modemutig ist kann auch verschiedene Muster mit einander kombinieren, nur sollte man darauf achten, dass die Farben miteinander harmonieren. Weniger Modemutigen empfehlen wir bunt gemusterte Socken mit einem relativ minimalistischen Outfit abzustimmen oder umgekehrt.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "rating_name": "",
+            "rating_text": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_Ed6RCD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/112_-_ADW02314-1_web.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<p>Auch im <strong>Businessbereich<\/strong> sind die Tage der grau-schwarzen Tristessse gezählt, allerdings sollten bunte Socken immer dem Anlass angepasst werden und bei Veranstaltungen mit dem Dresscode „Black Tie“ auf das farbige Fashion Statement verzichtet werden.<\/p><p>Ansonsten darf beim Anzug die Farbe der Socke sich gänzlich vom gesamten Outfit abheben oder sich in einem der Accessoires wie zum Beispiel Krawatte, Fliege oder Einstecktuch wiederfinden.<\/p><p>Unabhängig von Farbe und Muster sollte der Businessmann im Sitzen niemals sein nacktes Bein zeigen. Dank der klassischen Kniestrümpfe kann dies vermieden werden.<\/p><p>Noch ein interessanter Aspekt: Gemäß der Studie <strong>“The Red Sneaker Effekt“ <\/strong>der Harvard Businesss School wirken Männer mit bunten Socken kompetenter, cooler und erfolgreicher. <\/p>",
+            "link_text": "",
+            "link_url": "",
+            "rating_name": "",
+            "rating_text": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_GeirF4",
+        "image_aLMFkq",
+        "image_Ed6RCD"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "navigation": {
+          "type": "navigation",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "navigation"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": false,
+        "layout": "image_left_text_right",
+        "show_author": false,
+        "show_date": false,
+        "show_comments_count": false,
+        "show_share_buttons": false,
+        "banner_background": "",
+        "banner_text_color": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_width": "750px"
+      }
+    },
+    "contact_JqqzTF": {
+      "type": "contact",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Gerne beraten wir Dich in Styling-Fragen",
+        "content": "<p>Du fragst Dich, welche Socke zu Deinem Outfit oder Deiner Hose passt?<\/p><p>Das Patron Socks Team hilft gerne bei der Auswahl und steht bei Fragen zu den neusten Styling-Tipps beratend zur Seite. Schicke uns einfach Deine Stilfrage und\/oder ein Foto von Deinem Outfit per E-Mail an:<\/p><p><strong>hello@patronsocks.de<\/strong><\/p><p>und unsere Stylistin antwortet Dir. Wir freuen uns auf Deine Nachricht.<\/p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_JbKCaH",
+    "media_with_text_AFnWcq",
+    "main",
+    "contact_JqqzTF"
+  ]
+}

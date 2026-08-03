@@ -1,0 +1,201 @@
+{
+  "sections": {
+    "image_with_text_overlay_hRtxdx": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_A7nKNC": {
+          "type": "subheading",
+          "settings": {
+            "text": "PATRON SOCKS – DAS PERFEKTE GESCHENK"
+          }
+        },
+        "heading_aFeaUF": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "button_rRjFW8": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "SPARE JETZT BIS ZU 20% BEIM KAUF VON MEHR ALS 4 PAAR SOCKEN!",
+            "url": "",
+            "background": "",
+            "text_color": "#6ed972"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_A7nKNC",
+        "heading_aFeaUF",
+        "button_rRjFW8"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify:\/\/shop_images\/13.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h1",
+        "image_size": "md",
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "filter_layout": "drawer",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    },
+    "media_grid_BLpKmb": {
+      "type": "media-grid",
+      "blocks": {
+        "image_tRt6ew": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/50780527_390048981560890_992077131150262272_n.png",
+            "title": "",
+            "heading_tag": "h5",
+            "link_url": "shopify:\/\/collections\/crazy-socks-zum-verschenken",
+            "link_text": "CRAZY SOCKS VERSCHENKEN",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#632b99",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_bEDGN9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/67455828_3014344698637025_9169433161786982400_n.jpg",
+            "title": "",
+            "heading_tag": "h6",
+            "link_url": "shopify:\/\/collections\/business-socken-zum-verschenken",
+            "link_text": "BUSINESS SOCKEN ALS GESCHENK",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#632b99",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_KxPCDd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dom-Fuesslinge-von-PATRON-SOCKS.jpg",
+            "title": "",
+            "heading_tag": "h5",
+            "link_url": "shopify:\/\/products\/gutschein",
+            "link_text": "GUTSCHEINE FÜR PATRON SOCKS",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#632b99",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_kBew8e": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GESCHENKE-COLLECTION.jpg",
+            "title": "",
+            "heading_tag": "h5",
+            "link_url": "shopify:\/\/collections",
+            "link_text": "ZUM PATRON SOCKS SHOP",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#632b99",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_tRt6ew",
+        "image_bEDGN9",
+        "image_KxPCDd",
+        "image_kBew8e"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 200,
+        "background": "",
+        "background_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_hRtxdx",
+    "banner",
+    "main",
+    "media_grid_BLpKmb"
+  ]
+}

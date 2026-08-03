@@ -1,0 +1,173 @@
+.accordion.group {
+  border-color: #fff;
+  border-width: 0 0 2.5px 0;
+}
+.accordion-box > :last-child {
+  border-block-end-width: 0 !important;
+}
+:root {
+  --text-font-family: "articulat-cf", sans-serif;
+  --heading-font-family: "articulat-cf", sans-serif;
+}
+slideshow-carousel .subheading.h0 {
+  font-size: 55px;
+}
+slideshow-carousel .subheading.h1 {
+  font-size: 50px;
+}
+slideshow-carousel .subheading.h2 {
+  font-size: 45px;
+}
+slideshow-carousel .subheading.h4 {
+  font-size: 35px;
+}
+slideshow-carousel .subheading.h5 {
+  font-size: 30px;
+}
+slideshow-carousel .subheading.h6 {
+  font-size: 25px;
+}
+slideshow-carousel .subheading,
+image-banner .prose {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+}
+split-lines {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+.announcement-bar__wrapper {
+  max-width: none;
+}
+
+.shopify-section--multi-column .prose li {
+  list-style: none;
+  text-transform: uppercase;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  letter-spacing: var(--heading-letter-spacing);
+  color: #632B99;
+}
+
+.shopify-section--multi-column .prose li::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  background-image: url('//patronsocks.myshopify.com/cdn/shop/t/2/assets/patronsocks_check.svg');
+}
+
+.rounded {
+  border-radius: 0 !important;
+}
+
+.announcement-bar .lieferzeit::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 5vw;
+  height: 30px;
+  width: 33px;
+  background-image: url('//patronsocks.myshopify.com/cdn/shop/t/2/assets/patronsocks_lieferzeit.svg');
+  top: 10px;
+  position: relative;
+}
+
+.announcement-bar .nachhaltigkeit::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 5vw;  
+  height: 30px;
+  width: 30px;
+  background-image: url('//patronsocks.myshopify.com/cdn/shop/t/2/assets/patronsocks_nachhaltigkeit.svg');
+  top: 10px;
+  position: relative;
+}
+
+.announcement-bar .antiloch::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 5vw;  
+  height: 30px;
+  width: 30px;
+  background-image: url('//patronsocks.myshopify.com/cdn/shop/t/2/assets/patronsocks_antiloch.svg');
+  top: 10px;
+  position: relative;
+}
+.announcement-bar .sterne::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 5vw;  
+  height: 30px;
+  width: 30px;
+  background-image: url('//patronsocks.myshopify.com/cdn/shop/t/2/assets/patronsocks_sterne.svg');
+  top: 10px;
+  position: relative;
+}
+
+.announcement-bar p {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.patronsocksrating {
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 50px 5vw 0;
+}
+
+.patronsocksrating .subheading::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  background-image: url('//patronsocks.myshopify.com/cdn/shop/t/2/assets/signet-patron-socks.svg');
+  top: 12px;
+  position: relative;    
+}
+
+.patronsocksrating .rating_text {
+  padding-top: 15px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.header {
+  box-shadow: 0px 3px 5px 0px #1e1e1edb;
+}
+
+.line-item-qty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid grey;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.line-item-qty .line-item-qty-input {
+  border: none;
+  text-align: center;
+  font-size: var(--text-xs);
+  background: none;
+  border-width: 1px;
+  outline: none;
+  width: 30px;
+  padding-block-start: var(--spacing-1);
+  padding-block-end: var(--spacing-1);
+}
+
+.line-item-qty button {
+  width: 24px;
+  display: flex;
+  justify-content: center;
+}

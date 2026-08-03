@@ -1,0 +1,77 @@
+{%- render 'section-spacing-collapsing' -%}
+
+<div {% render 'section-properties' %}>
+  <div class="section-stack section-stack--horizontal">
+    <div class="section-stack__intro">
+      <div class="prose">
+        {%- if section.settings.subheading != blank -%}<p class="subheading">{{ section.settings.subheading }}</p>{%- endif -%}
+        <h2 class="h2">{% render 'styled-text', content: section.settings.title, gradient: section.settings.heading_gradient %}</h2>
+        {{ section.settings.content }}
+      </div>
+    </div>
+    <div class="section-stack__main">
+      <div {% render 'surface', class: 'accordion-box rounded', background: section.settings.accordion_background, text_color: section.settings.accordion_text_color, background_fallback: 'bg-secondary' %}>
+        {%- for block in section.blocks -%}
+          {%- capture answer -%}<div class="prose">{{ block.settings.answer }}</div>{%- endcapture -%}
+          {% render 'accordion', title: block.settings.question, content: answer, block: block %}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {%- for block in section.blocks -%}
+    {
+      "@type":"Question",
+      "name":{{ block.settings.question | json }},
+      "acceptedAnswer":{"@type":"Answer","text":{{ block.settings.answer | strip_html | json }}}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+{% schema %}
+{
+  "name":"Patron – FAQ",
+  "class":"shopify-section--patron-faq",
+  "tag":"section",
+  "settings":[
+    {"type":"checkbox","id":"full_width","label":"Full width","default":true},
+    {"type":"color","id":"background","label":"Background","default":"#f2eee7"},
+    {"type":"color","id":"text_color","label":"Text","default":"#121212"},
+    {"type":"text","id":"subheading","label":"Subheading","default":"FAQ"},
+    {"type":"text","id":"title","label":"Heading","default":"Häufige Fragen vor dem ersten Projekt"},
+    {"type":"richtext","id":"content","label":"Content","default":"<p>Die wichtigsten Antworten zu Gestaltung, Produktion, Geschenksets und Versand.</p>"},
+    {"type":"color","id":"accordion_background","label":"Accordion background","default":"#ffffff"},
+    {"type":"color","id":"accordion_text_color","label":"Accordion text","default":"#121212"},
+    {"type":"color_background","id":"heading_gradient","label":"Heading gradient"}
+  ],
+  "blocks":[
+    {
+      "type":"item","name":"FAQ item","limit":10,
+      "settings":[
+        {"type":"text","id":"question","label":"Question","default":"Ab welcher Stückzahl können individuelle Socken produziert werden?"},
+        {"type":"richtext","id":"answer","label":"Answer","default":"<p>Tragt hier eure tatsächliche Mindestbestellmenge und mögliche Staffelungen ein.</p>"}
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Patron – FAQ",
+      "blocks":[
+        {"type":"item","settings":{"question":"Ab welcher Stückzahl können individuelle Socken produziert werden?","answer":"<p>Tragt hier eure tatsächliche Mindestbestellmenge und mögliche Staffelungen ein.</p>"}},
+        {"type":"item","settings":{"question":"Wie lange dauern Design, Produktion und Versand?","answer":"<p>Die Projektlaufzeit hängt von Menge, Modell, Verpackung und Versandart ab. Nach der Anfrage erhaltet ihr einen realistischen Zeitplan.</p>"}},
+        {"type":"item","settings":{"question":"Können Geschenksets individuell zusammengestellt werden?","answer":"<p>Ja. Neben Socken können beispielsweise Flyer, Gutscheine, Anschreiben, Karten und weitere Werbemittel konfektioniert werden.</p>"}},
+        {"type":"item","settings":{"question":"Ist ein Einzelversand an verschiedene Adressen möglich?","answer":"<p>Ja. Je nach Projekt ist der Versand direkt an Mitarbeiter, Kunden oder Geschäftspartner möglich.</p>"}},
+        {"type":"item","settings":{"question":"Erhalten wir vorab einen Designvorschlag?","answer":"<p>Ja. Nach Eingang der wichtigsten Angaben erstellen wir einen ersten unverbindlichen Designvorschlag.</p>"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

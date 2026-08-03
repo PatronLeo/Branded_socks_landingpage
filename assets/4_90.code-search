@@ -1,0 +1,9 @@
+# Query: 2,90
+# ContextLines: 1
+
+1 result - 1 file
+
+assets/theme.js:
+  1966        if(shippingCostElement) {
+  1967:         shippingCostElement.innerText = "4,90 €";
+  1968        }

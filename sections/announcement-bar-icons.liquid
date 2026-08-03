@@ -1,0 +1,59 @@
+{% schema %}
+{
+  "name": "Announce Bar Icons",
+  "settings": [
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement Text",
+      "default": "Free shipping on all orders over $50!"
+    },
+    {
+      "type": "image_picker",
+      "id": "announcement_icon",
+      "label": "Announcement Icon"
+    },
+    {
+      "type": "number",
+      "id": "icon_size",
+      "label": "Icon Size (px)",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .announcement-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: {{ settings.background_color }};
+    color: {{ settings.text_color }};
+    padding: 10px;
+  }
+  .announcement-bar__icon {
+    width: {{ settings.icon_size }}px;
+    height: {{ settings.icon_size }}px;
+    margin-right: 10px;
+  }
+</style>
+
+<div class="announcement-bar">
+  {% if settings.announcement_icon %}
+    <img src="{{ settings.announcement_icon | img_url: '200x' }}" alt="Announcement Icon" class="announcement-bar__icon">
+  {% endif %}
+  <span class="announcement-bar__text">{{ settings.announcement_text }}</span>
+</div>

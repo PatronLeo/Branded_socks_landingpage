@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "navigation": {
+          "type": "navigation",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "navigation"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "layout": "content_first",
+        "show_author": false,
+        "show_date": false,
+        "show_comments_count": true,
+        "show_share_buttons": true,
+        "banner_background": "",
+        "banner_text_color": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "content_width": "950px"
+      }
+    },
+    "contact_PBH8Pz": {
+      "type": "contact",
+      "settings": {
+        "full_width": true,
+        "subheading": "Kontaktiere uns",
+        "title": "Gerne beraten wir Dich in Styling-Fragen",
+        "content": "<p>Du fragst Dich, welche Socke zu Deinem Outfit oder Deiner Hose passt?<\/p><p>Das Patron Socks Team hilft gerne bei der Auswahl und steht bei Fragen zu den neusten Styling-Tipps beratend zur Seite. Schicke uns einfach Deine Stilfrage und\/oder ein Foto von Deinem Outfit per E-Mail an:<\/p><p><strong>hello@patronsocks.de<\/strong><\/p><p>und unsere Stylistin antwortet Dir. Wir freuen uns auf Deine Nachricht.<\/p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact_PBH8Pz"
+  ]
+}

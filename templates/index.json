@@ -1,0 +1,1410 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "lb_story_slider_Wh6DG3": {
+      "type": "lb-story-slider",
+      "blocks": {
+        "block_HUiMUf": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Website_Header_Mobile-Neuheiten-PATRON_SOCKS.jpg",
+            "heading": "NEUHEITEN",
+            "url": "https://www.patronsocks.com/collections/neuheiten",
+            "highlight": false
+          }
+        },
+        "block_JwnYf7": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/PS-48-787_Lifestyle_Smile_Sportsocken_rosa_PATRON_SOCKS_1.jpg",
+            "heading": "TENNISSOCKEN",
+            "url": "https://patronsocks.myshopify.com/collections/sportsocken-1",
+            "highlight": false
+          }
+        },
+        "block_PBhWPP": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Website_Swiper_1200_58abd687-2f4d-4e87-9aed-4642d9b3fe86.jpg",
+            "heading": "MIDI SOCKEN",
+            "url": "https://www.patronsocks.com/collections/midi-socken",
+            "highlight": false
+          }
+        },
+        "block_JCYk6W": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/PS-11-407_Lifestyle_CherieGlowSocken_powdermint_PATRONSOCKS_1.jpg",
+            "heading": "GLITZER SOCKEN",
+            "url": "https://patronsocks.myshopify.com/collections/lurex-socken",
+            "highlight": false
+          }
+        },
+        "block_N76B6K": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Family_Pack_Icon_PATRON_SOCKS.jpg",
+            "heading": "FAMILY PACK",
+            "url": "https://www.patronsocks.com/collections/familiensocken",
+            "highlight": false
+          }
+        },
+        "block_XJQMkH": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/PS-48-900_Lifestylefoto_Sportsocken_Weiss_PATRON_SOCKS_7.jpg",
+            "heading": "BASIC TENNISSOCKEN",
+            "url": "https://www.patronsocks.com/collections/basic-tennissocken",
+            "highlight": false
+          }
+        },
+        "block_X6y78K": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Website_Swiper_Angebote_PATRON_SOCKS-2.jpg",
+            "heading": "ANGEBOTE",
+            "url": "https://www.patronsocks.com/collections/angebote",
+            "highlight": false
+          }
+        },
+        "block_rdXf9w": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/PS-1-621_Pinguin_Socken_blau.jpg",
+            "heading": "CRAZY SOCKS",
+            "url": "https://patronsocks.myshopify.com/collections/crazy-socks-1",
+            "highlight": false
+          }
+        },
+        "block_YxDQFa": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Gruene_Flamingo_Sneaker_Socken_von_PATRON_SOCKS.jpg",
+            "heading": "SNEAKER SOCKEN",
+            "url": "https://patronsocks.myshopify.com/collections/sneaker-socken-1",
+            "highlight": false
+          }
+        },
+        "block_9ta6rP": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Fuesslinge_Blau_von_PATRON_SOCKS.jpg",
+            "heading": "FÜSSLINGE",
+            "url": "https://patronsocks.myshopify.com/collections/fusslinge-1",
+            "highlight": false
+          }
+        },
+        "block_gKtBjC": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Business_Socken_von_PATRON_SOCKS.jpg",
+            "heading": "BUSINESS SOCKEN",
+            "url": "https://patronsocks.myshopify.com/collections/premium-business-socken-1",
+            "highlight": false
+          }
+        },
+        "block_PAGLKe": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Blaue_Kniestruempfe_von_PATRON_SOCKS.jpg",
+            "heading": "KNIESTRÜMPFE",
+            "url": "https://patronsocks.myshopify.com/collections/kniestrumpfe-1",
+            "highlight": false
+          }
+        },
+        "block_bmQdgy": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/CINQUE_SOCKEN_von_PATRON_SOCKS.png",
+            "heading": "CINQUE SOCKEN",
+            "url": "https://patronsocks.myshopify.com/collections/cinque-socken-1",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": [
+        "block_HUiMUf",
+        "block_JwnYf7",
+        "block_PBhWPP",
+        "block_JCYk6W",
+        "block_N76B6K",
+        "block_XJQMkH",
+        "block_X6y78K",
+        "block_rdXf9w",
+        "block_YxDQFa",
+        "block_9ta6rP",
+        "block_gKtBjC",
+        "block_PAGLKe",
+        "block_bmQdgy"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "max-show-range": "2400",
+        "abgerundete_ecken": 100,
+        "desktop-size": 110,
+        "desktop-distance": 9,
+        "mobile-size": 25,
+        "mobile-distance": 5,
+        "schriftart": "system_ui_n4",
+        "fontsize": 10,
+        "schriftfarbe": "#000000",
+        "highlight-color": "#c4258d"
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Header_Website_Glitzer_Socken-2.jpg",
+            "mobile_image": "shopify://shop_images/Website_Header_Mobile_Midi_PATRON_SOCKEn-2.jpg",
+            "content_max_width": 900,
+            "mobile_text_position": "place-self-start text-start",
+            "desktop_text_position": "sm:place-self-start-center sm:text-center",
+            "subheading": "Sommer? Erst recht Socken.",
+            "title": "Leicht, atmungsaktiv und perfekt für warme Tage.",
+            "heading_tag": "h3",
+            "button_text": "JETZT SHOPPEN",
+            "button_link": "shopify://collections/sportsocken",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#1a1a1a",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_E74MYy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_c6f141e5-a850-41e8-8845-0439e718f5cf.jpg",
+            "mobile_image": "shopify://shop_images/3_d3869ad6-899b-4cef-8533-b4b8a7eeb08c.jpg",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h3",
+            "button_text": "JETZT SHOPPEN",
+            "button_link": "shopify://collections/crazy-socks",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 2,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "image_E74MYy"
+      ],
+      "custom_css": [
+        ".split-lines span {display: initial !important;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "lg",
+        "controls_type": "none",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+      }
+    },
+    "trust_element_slider_pdFR7G": {
+      "type": "trust-element-slider",
+      "blocks": {
+        "slide_eBBYkh": {
+          "type": "slide",
+          "settings": {
+            "text": "1-3 Tage Lieferzeit",
+            "image": "shopify://shop_images/schnelle-lieferung-weiss.svg"
+          }
+        },
+        "slide_CMndXx": {
+          "type": "slide",
+          "settings": {
+            "text": "Anti-Loch Garantie",
+            "image": "shopify://shop_images/Anti-Loch-Garantie-weiss.svg"
+          }
+        },
+        "slide_rFK8B9": {
+          "type": "slide",
+          "settings": {
+            "text": "Extra lange Lebensdauer",
+            "image": "shopify://shop_images/nachhaltige-socken-weiss.svg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_eBBYkh",
+        "slide_CMndXx",
+        "slide_rFK8B9"
+      ],
+      "disabled": true,
+      "settings": {
+        "backgroundColor": "#42195a"
+      }
+    },
+    "media-grid": {
+      "type": "media-grid",
+      "blocks": {
+        "item-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/business.jpg",
+            "title": "Premium Business",
+            "heading_tag": "h4",
+            "link_url": "shopify://collections/premium-business-socken",
+            "link_text": "Jetzt Shoppen",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        },
+        "item-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sport.jpg",
+            "title": "Sportsocken",
+            "heading_tag": "h5",
+            "link_url": "shopify://collections/sportsocken",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        },
+        "item-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sneaker.jpg",
+            "title": "Sneaker Socken",
+            "heading_tag": "h5",
+            "link_url": "shopify://collections/sneaker-socken",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        },
+        "29246d34-c6e0-4373-84f6-b15e57736a00": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/crazy.jpg",
+            "title": "Crazy Socken",
+            "heading_tag": "h4",
+            "link_url": "shopify://collections/crazy-socks",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "29246d34-c6e0-4373-84f6-b15e57736a00"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "rich_text_Y3afLp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6Wgj8T": {
+          "type": "heading",
+          "settings": {
+            "text": "UNSERE BESTSELLER",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_6Wgj8T"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f2f1f1",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured_collection_6g4q49": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "soft-glow-3er-pack",
+          "neonliebe",
+          "pride-herzklopfen-tennissocken",
+          "fc-bockt-tennissocken",
+          "espresso-tennissocken",
+          "zwinker-smile-sportsocken",
+          "ok-wau-dackel-socken",
+          "leo-tennissocken"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 4,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#f2f1f1",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_Xrrd4G": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_gBcPGK": {
+          "type": "subheading",
+          "settings": {
+            "text": "BE CLEVER.  BE YOU.  BE PATRON."
+          }
+        },
+        "heading_GQ7LWH": {
+          "type": "heading",
+          "settings": {
+            "text": "KAUFE MEHR UND SPARE BEI JEDEM KAUF BIS ZU 25€.",
+            "heading_tag": "h2"
+          }
+        },
+        "button_iGkn4T": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "JETZT SPAREN",
+            "url": "shopify://collections/angebote",
+            "background": "#ffffff",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gBcPGK",
+        "heading_GQ7LWH",
+        "button_iGkn4T"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/socken-pakete.jpg",
+        "mobile_image": "shopify://shop_images/socken-bundles_1.jpg",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#632b99",
+        "overlay_opacity": 20
+      }
+    },
+    "rich_text_4bWBKn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Kr8iqy": {
+          "type": "heading",
+          "settings": {
+            "text": "UNSERE NEUHEITEN",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kr8iqy"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured_collection_3qRHRX": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "pride-love-5er-pack",
+          "pride-herzschlag-tennissocken",
+          "ooh-la-la-glitzersocken",
+          "croissant-tennissocken",
+          "bow-tennissocken",
+          "butterfly-tennissocke",
+          "glitzerliebe",
+          "soft-glow-gold-6er-pack"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 4,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_link_blocks_nVpE6M": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_Uj8f7P": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/PS-1-617_Totenkopf_Socke_LILA_mod_PATRON-SOCKS-1.jpg",
+            "stretch_image": true,
+            "link_text": "Totenkopf Socken",
+            "link_url": "shopify://products/totenkopf-socken-lila",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "item_A7KazD": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/PS-1-616_Kaktus_Socke_BLAU_mod_PATRON-SOCKS-1_1dc22f83-aa82-4e97-8917-68450fd1cbcc.jpg",
+            "stretch_image": true,
+            "link_text": "Kaktus Socken",
+            "link_url": "shopify://products/kaktus-socken-gruen",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "item_BCLcPN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/PS-1-614_Herz_Socke_BLAU_mod_PATRON-SOCKS.jpg",
+            "stretch_image": true,
+            "link_text": "Herz Socken",
+            "link_url": "shopify://products/herz-socken-blau",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "item_6G7wmE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/PS-1-621_Pinguin_Socken_BLAU_mod_PATRON-SOCKS_78965930-ddec-4944-9ca0-24e2ca61106c.jpg",
+            "stretch_image": true,
+            "link_text": "Pinguin Socken",
+            "link_url": "shopify://products/pinguin-socken",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        },
+        "item_rUATgE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/PS-1-577_Zickzack-Muster_BLAU_mod_PATRON-SOCKS.jpg",
+            "stretch_image": true,
+            "link_text": "Zickzack Socken",
+            "link_url": "shopify://products/zickzack-socken",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "item_Uj8f7P",
+        "item_A7KazD",
+        "item_BCLcPN",
+        "item_6G7wmE",
+        "item_rUATgE"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "block_size": "large",
+        "subheading": "",
+        "title": "UNSERE NEUSTEN SOCKEN MOTIVE",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "feature-chart": {
+      "type": "feature-chart",
+      "blocks": {
+        "16644246508f6fa13a-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Heading 1",
+            "heading_2": "Heading 2",
+            "heading_3": "Heading 3",
+            "heading_4": "Heading 4",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "16644246508f6fa13a-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Yes</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>No</p>",
+            "value_4": "<p>No</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "16644246508f6fa13a-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>No</p>",
+            "value_2": "<p>Yes</p>",
+            "value_3": "<p>Yes</p>",
+            "value_4": "<p>No</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "16644246508f6fa13a-0",
+        "16644246508f6fa13a-1",
+        "16644246508f6fa13a-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare",
+        "title": "Product specification",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "image_with_text_overlay_LgFtT7": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_HngGwy": {
+          "type": "subheading",
+          "settings": {
+            "text": "BE INDEPENDANT.<br> BE PATRON. <br> BE YOU."
+          }
+        },
+        "heading_4WYgqg": {
+          "type": "heading",
+          "settings": {
+            "text": "FÜHL DICH FREI",
+            "heading_tag": "h4"
+          }
+        },
+        "button_rkJhMp": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "FÜSSLINGE SHOPPEN",
+            "url": "shopify://collections/fusslinge",
+            "background": "#ffffff",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HngGwy",
+        "heading_4WYgqg",
+        "button_rkJhMp"
+      ],
+      "custom_css": [
+        ".prose .bold {color: #d2cec8;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/invisible-socks-lion.jpg",
+        "mobile_image": "shopify://shop_images/Loewen_Fuesslinge_von_PATRON_SOCKS-2.png",
+        "mobile_text_position": "place-self-start text-start",
+        "desktop_text_position": "sm:place-self-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 21
+      }
+    },
+    "rich_text_fDPYhW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LW7ByF": {
+          "type": "heading",
+          "settings": {
+            "text": "BELIEBTE KATEGORIEN",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_LW7ByF"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_grid_patron_cdyLmV": {
+      "type": "media-grid-patron",
+      "blocks": {
+        "image_ihBnkw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Sneaker_Socken_gestreift_von_PATRON_SOCKS.png",
+            "title": "BE SNEAKY. <br> BE You. <br> BE PATRON.",
+            "subheading": "AUFFÄLLIG UNAUFFÄLLIG",
+            "link_url": "shopify://collections/sneaker-socken",
+            "link_text": "Sneaker Socken",
+            "mobile_text_position": "place-self-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ea3636",
+            "subline_color": "#ffffff",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5
+          }
+        },
+        "image_W3PetG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_12f43050-7ea3-4a51-8774-17dee1978b8b.png",
+            "title": "BE IN VOGUE.  BE YOU.  BE PATRON.",
+            "subheading": "SOCKEN FÜR DEINEN ITALIENISCHEN STYLE",
+            "link_url": "shopify://collections/cinque-socken",
+            "link_text": "CINQUE Socken",
+            "mobile_text_position": "place-self-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ea792c",
+            "subline_color": "#e2efe8",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5
+          }
+        },
+        "image_DLFGMm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Pinke_Business_Socken_von_PATRON_SOCKS.png",
+            "title": "BE Serious. <br> BE YOU. <br> BE PATRON.",
+            "subheading": "ROCKE DEIN BUSINESS",
+            "link_url": "shopify://collections/business",
+            "link_text": "BUSINESS SOCKEN",
+            "mobile_text_position": "place-self-start text-start",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ea8bc1",
+            "subline_color": "#ffffff",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5
+          }
+        }
+      },
+      "block_order": [
+        "image_ihBnkw",
+        "image_W3PetG",
+        "image_DLFGMm"
+      ],
+      "custom_css": [
+        ".media-grid-patron-subline {font-size: 20px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 200,
+        "mobile_row_height": 200,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "image_with_text_overlay_3PijNV": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_qkdQ8f": {
+          "type": "subheading",
+          "settings": {
+            "text": "BE GENEROUS.<br> BE PATRON. <br> BE YOU."
+          }
+        },
+        "heading_hRzFdF": {
+          "type": "heading",
+          "settings": {
+            "text": "SCHENKE WAHRE FREUDE",
+            "heading_tag": "h1"
+          }
+        },
+        "button_zwJ44c": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "GESCHENKBOXEN MIT STIL",
+            "url": "shopify://collections/geschenke",
+            "background": "#ffffff",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qkdQ8f",
+        "heading_hRzFdF",
+        "button_zwJ44c"
+      ],
+      "custom_css": [
+        ".prose .bold {color: #baeeff;}",
+        ".section-full {padding-bottom: 50px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/socken-geschenkbox_Kopie.jpg",
+        "mobile_image": "shopify://shop_images/Geschenkbox_Jacy_Leo.jpg",
+        "mobile_text_position": "place-self-start text-start",
+        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "image_with_text_overlay_icCcbw": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_ikDaPy": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_PmnLXE": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_NfmkcX": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_ikDaPy",
+        "heading_PmnLXE",
+        "richtext_NfmkcX"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/nachhaltigke-socken_jpg.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10
+      }
+    },
+    "rich_text_hCThgP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7RFgRN": {
+          "type": "heading",
+          "settings": {
+            "text": "NACHHALTIGE SOCKEN FÜR DIE UMWELT",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "subheading_JRjypK": {
+          "type": "subheading",
+          "settings": {
+            "text": "Mit unseren Socken verringerst Du Deinen ökologischen Fußabdruck."
+          }
+        }
+      },
+      "block_order": [
+        "heading_7RFgRN",
+        "subheading_JRjypK"
+      ],
+      "custom_css": [
+        ".bold {font-weight: 500; font-size: 1.25rem; color: #632b99;}",
+        ".section-full {padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_APkFQD": {
+      "type": "multi-column",
+      "blocks": {
+        "item_paJM8y": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Bei PATRON SOCKS kaufst du mehr als nur hochqualitative Socken, die deinen individuellen Stil perfektionieren. Mit jedem Paar PATRON SOCKS setzt du ein Statement für Nachhaltigkeit und Authentizität.</p><p>Wir sind stolz darauf, mit Lieferanten zusammenzuarbeiten, die Innovation und Qualität großschreiben. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_eXiiEX": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Unsere Partner sind Pioniere in der Nutzung nachhaltiger Technologien: Von geothermischen Heiz- und Kühlsystemen, die tief unter der Erde die Energie der Erde nutzen, bis hin zur Verwendung von Solarstrom in der Produktion. Diese Maßnahmen ermöglichen es uns, den ökologischen Fußabdruck unserer Socken signifikant zu reduzieren. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_3g9Pn4": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Erlebe mit PATRON SOCKS die perfekte Kombination aus Design, Qualität und einem verantwortungsbewussten Umgang mit Ressourcen. Trage mit uns zu einer saubereren und nachhaltigeren Welt bei.</p><ul><li>BE AUTHENTIC. BE YOU. BE PATRON.</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_paJM8y",
+        "item_eXiiEX",
+        "item_3g9Pn4"
+      ],
+      "custom_css": [
+        "img {width: 15vw;}",
+        "@media (max-width: 767px) {img {width: 40vw; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "logo_list_4KKJ3g": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_yTUqKL": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Logo_Media_Markt.png",
+            "logo_width": 300,
+            "link": ""
+          }
+        },
+        "logo_R3zr6Y": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Koelner-haie-logo_svg.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_GYHDyi": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Cinque_Logo_schwarz.png",
+            "logo_width": 110,
+            "link": ""
+          }
+        },
+        "logo_gUnL6i": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_iHEm86": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_yTUqKL",
+        "logo_R3zr6Y",
+        "logo_GYHDyi",
+        "logo_gUnL6i",
+        "logo_iHEm86"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "UNSERE TREUEN PARTNER",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "collection_list_GwaWpV": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_6CbqCq": {
+          "type": "collection",
+          "settings": {
+            "collection": "cinque-socken",
+            "image": "shopify://shop_images/cinque-socken.jpg",
+            "subheading": "",
+            "title": "CINQUE SOCKEN",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#632b99",
+            "overlay_opacity": 13
+          }
+        },
+        "collection_r3J3qB": {
+          "type": "collection",
+          "settings": {
+            "collection": "sneaker-socken",
+            "image": "shopify://shop_images/sneaker-socken_2.jpg",
+            "subheading": "",
+            "title": "SNEAKER SOCKEN",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#632b99",
+            "overlay_opacity": 13
+          }
+        },
+        "collection_f3VnnP": {
+          "type": "collection",
+          "settings": {
+            "collection": "sportsocken",
+            "image": "shopify://shop_images/SPORT-KOLLEKTION-START.png",
+            "subheading": "",
+            "title": "SPORTSOCKEN",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#632b99",
+            "overlay_opacity": 13
+          }
+        }
+      },
+      "block_order": [
+        "collection_6CbqCq",
+        "collection_r3J3qB",
+        "collection_f3VnnP"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "1",
+        "collections_per_row": 3,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "image_with_text_overlay_3cVzP7": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/koelner-haie-fan-socken_1.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 11
+      }
+    },
+    "rich_text_xQmgXx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TqpRnw": {
+          "type": "heading",
+          "settings": {
+            "text": "SOCKEN FÜR DIE FLOSSEN!?",
+            "heading_tag": "h1",
+            "text_color": "#f01a26",
+            "gradient": ""
+          }
+        },
+        "richtext_frXyGf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Als Kölner Unternehmen ist es uns eine Herzensangelegenheit einen Partner wie die <strong>Kölner Haie</strong> an der Seite zu haben. Gemeinsam bringen wir knallige <strong>Socken</strong> in exklusiver Qualität auf´s Eis. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TqpRnw",
+        "richtext_frXyGf"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "166442457738b23caf-0": {
+          "type": "item",
+          "settings": {
+            "title": "VERSENDET IHR AUCH INS AUSLAND?",
+            "content": "<p>Ja, wir versenden <strong>weltweit</strong> und innerhalb von Deutschland versandkostenfrei.</p><p>Bitte beachtet bei Bestellungen außerhalb der EU, dass der von uns  angegebene Produktpreis ohne Zoll und Steuern ist.  </p><p>Wir versenden über den Service DDU (Delivery Duty Unpaid). Die anfallenden Einfuhrumsatzsteuer sowie evtl. Zollgebühren werden Dir von dem Kurierdienst separat in Rechnung gestellt. Diese Kosten können von uns nicht abgeschätzt werden. Bitte setzt euch mit eurer zuständigen Zollbehörde in Verbindung.  </p>"
+          }
+        },
+        "item_W4pJ8h": {
+          "type": "item",
+          "settings": {
+            "title": "WIE MELDE ICH MICH ZUM NEWSLETTER AN?",
+            "content": "<p>Danke! Wir freuen uns, dass du dich für unseren Socksletter interessierst!</p><p>Scrolle einfach auf unserer Startseite nach unten – dort kannst du dich für den Socksletter anmelden. Als Dankeschön schenken wir dir einen Gutscheincode mit einem Rabatt von bis zu <strong>30%</strong>.</p>"
+          }
+        },
+        "166442457738b23caf-1": {
+          "type": "item",
+          "settings": {
+            "title": "WIE LÖSE ICH MEINEN GUTSCHEIN EIN?",
+            "content": "<p>Du kannst Deinen Gutschein im Warenkorb unter “Gutscheincode” eintragen und anschließend “Gutschein  anwenden” klicken.</p><p>Bitte beachte außerdem die individuellen Bedingungen, die für die jeweiligen Gutscheine oder Rabattcodes gelten. Diese stehen in der Regel im Sternchentext. </p>"
+          }
+        },
+        "166442457738b23caf-2": {
+          "type": "item",
+          "settings": {
+            "title": "WIE WASCHE ICH MEINE SOCKEN?",
+            "content": "<p>Unsere bunten PATRON SOCKS Socken können bei <strong>40 Grad</strong> in der Waschmaschine gewaschen werden.</p><p>Wir empfehlen, Socken <strong>auf links zu waschen</strong>. Auf diese Weise werden Hautpartikel der Füße deutlich besser ausgespült. </p>"
+          }
+        },
+        "item_DVd6M9": {
+          "type": "item",
+          "settings": {
+            "title": "WANN IST MEINE GRÖSSE WIEDER VERFÜGBAR?",
+            "content": "<p><strong>Wir versuchen immer  schnellstmöglich alle Größen anzubieten. Sollte Deine Größe ausnahmsweise nicht verfügbar sein, kannst Du uns gerne eine Email an die hello@patronsocks.de senden. Wir melden uns bei Dir sobald Deine Lieblingssocke wieder da ist.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "166442457738b23caf-0",
+        "item_W4pJ8h",
+        "166442457738b23caf-1",
+        "166442457738b23caf-2",
+        "item_DVd6M9"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "NOCH FRAGEN OFFEN?",
+        "content": "<p>Falls Deine Frage hier nicht beantwortet wird, <strong>schreib uns gerne eine Mail</strong> und wir melden uns so schnell es geht bei Dir.</p>",
+        "team_avatar": "shopify://shop_images/Petra-und-Leo-901x1024.png",
+        "team_avatar_width": 250,
+        "support_hours": "Du kannst uns jederzeit eine E-Mail schreiben oder unten auf das Kontaktformular klicken.",
+        "answer_time": "Durchschn. Antwortzeit: 24h",
+        "button_text": "KONTAKT AUFNEHMEN",
+        "button_url": "shopify://pages/contact",
+        "text_position": "start",
+        "background": "#632b98",
+        "background_gradient": "linear-gradient(89deg, rgba(99, 43, 153, 1), rgba(66, 25, 90, 1) 99%)",
+        "text_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "heading_gradient": "",
+        "button_background": "#6ed972",
+        "button_text_color": "",
+        "accordion_background": "#6ed972",
+        "accordion_text_color": ""
+      }
+    },
+    "17752280481e4910f2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_cpAUCg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_cpAUCg"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "lb_story_slider_Wh6DG3",
+    "slideshow",
+    "trust_element_slider_pdFR7G",
+    "media-grid",
+    "rich_text_Y3afLp",
+    "featured_collection_6g4q49",
+    "image_with_text_overlay_Xrrd4G",
+    "rich_text_4bWBKn",
+    "featured_collection_3qRHRX",
+    "image_link_blocks_nVpE6M",
+    "feature-chart",
+    "image_with_text_overlay_LgFtT7",
+    "rich_text_fDPYhW",
+    "media_grid_patron_cdyLmV",
+    "image_with_text_overlay_3PijNV",
+    "image_with_text_overlay_icCcbw",
+    "rich_text_hCThgP",
+    "multi_column_APkFQD",
+    "logo_list_4KKJ3g",
+    "collection_list_GwaWpV",
+    "image_with_text_overlay_3cVzP7",
+    "rich_text_xQmgXx",
+    "faq",
+    "17752280481e4910f2"
+  ]
+}

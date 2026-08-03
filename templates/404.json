@@ -1,0 +1,245 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-not-found",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "slideshow_nVpKYz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_FRky3D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/404.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "OOOPS...",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#3a3a3a",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 7,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_FRky3D"
+      ],
+      "custom_css": [
+        ".subheading {color: #3a3a3a;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "rich_text_MXjLAG": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_x7ErKe": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_d4mQVt": {
+          "type": "heading",
+          "settings": {
+            "text": "Deine gesuchten Socken sind gerade in der Waschmaschine!",
+            "heading_tag": "h3",
+            "text_color": "#3a3a3a",
+            "gradient": ""
+          }
+        },
+        "richtext_WCpRti": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_x7ErKe",
+        "heading_d4mQVt",
+        "richtext_WCpRti"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "collection_list_k8z8dQ": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_kc4Lfp": {
+          "type": "collection",
+          "settings": {
+            "collection": "crazy-socks",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_4JPMKF": {
+          "type": "collection",
+          "settings": {
+            "collection": "sportsocken",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_e7Ciie": {
+          "type": "collection",
+          "settings": {
+            "collection": "sneaker-socken",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_zTPAEF": {
+          "type": "collection",
+          "settings": {
+            "collection": "fusslinge",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_U8iJVg": {
+          "type": "collection",
+          "settings": {
+            "collection": "kniestrumpfe",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_trw3wk": {
+          "type": "collection",
+          "settings": {
+            "collection": "business",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_CnfYJ8": {
+          "type": "collection",
+          "settings": {
+            "collection": "cinque-socken",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_atrHxF": {
+          "type": "collection",
+          "settings": {
+            "collection": "luxus-socken",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_kc4Lfp",
+        "collection_4JPMKF",
+        "collection_e7Ciie",
+        "collection_zTPAEF",
+        "collection_U8iJVg",
+        "collection_trw3wk",
+        "collection_CnfYJ8",
+        "collection_atrHxF"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "1",
+        "collections_per_row": 4,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "Hier geht's wieder zurück.",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_nVpKYz",
+    "rich_text_MXjLAG",
+    "collection_list_k8z8dQ"
+  ]
+}

@@ -1,0 +1,617 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "slideshow_zDBX7w": {
+      "type": "slideshow",
+      "blocks": {
+        "image_jwxGK9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patronsocks-team.jpg",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-center-end text-end",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "subheading": "WE'RE FOOLISH. <br>  WE'RE CHEERFUL. <br>  <span style=\"color: #6dd972;\">WE'RE PATRON.<\/span>",
+            "title": "",
+            "heading_tag": "h4",
+            "button_text": "ZUM PATRON SOCKS SHOP",
+            "button_link": "shopify:\/\/collections",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 46,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_jwxGK9"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "md",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "rich_text_TtHK3j": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BnDmMn": {
+          "type": "heading",
+          "settings": {
+            "text": "A PATRON STORY",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": "linear-gradient(273deg, rgba(99, 43, 153, 1), rgba(99, 43, 153, 1) 83%)"
+          }
+        },
+        "subheading_gmc8eU": {
+          "type": "subheading",
+          "settings": {
+            "text": "Eine Mutter. Ein Sohn. Eine Idee!"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BnDmMn",
+        "subheading_gmc8eU"
+      ],
+      "custom_css": [
+        ".bold {font-weight: 500; font-size: 1.25rem; color: #632b99;}",
+        ".section-full {padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_CnazgH": {
+      "type": "multi-column",
+      "blocks": {
+        "item_ERAknx": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Schon als kleines Kind wollte Leo keine Überraschungseier oder Spielzeugautos: Er wollte Socken. Socken in in bunten Farben. Socken mit außergewöhnlichen Motiven. <strong>Socken mit Style!<\/strong><\/p><p>Während andere von <strong>S<\/strong><em><strong>ocken<\/strong><\/em> unterm Weihnachtsbaum eher gelangweilt waren, strahlte Leo immer voller Begeisterung. Wir waren also immer auf der Suche nach <strong>neuen Designs<\/strong> und Motiven mit diesem gewissen Etwas.<\/p>",
+            "link_url": "https:\/\/patronsocks.myshopify.com\/collections\/crazy-socks-zum-verschenken",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_xLyDx4": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Aber: Was nützt das schönste Design, wenn es an <strong>Qualität und Komfort<\/strong> fehlt? Oder wenn die Socken unter schlechten Bedingungen produziert werden?<\/p><p><\/p><p><em>„Können wir das nicht selbst machen?“<\/em> fragte Leo mich als wir 2018 eine Doku über ein Geschäftsmodell aus den USA ansahen.<br\/><br\/>Warum eigentlich nicht?<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zrtWDY": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Koelnder_DOM_in_Farben_von_PATRON_SOCKS.png",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_ERAknx",
+        "item_xLyDx4",
+        "item_zrtWDY"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_XqQcqH": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_P3NP8L": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/leo-groh-quadrat-copy-0_1.jpg",
+            "media_width": 30,
+            "media_position": "start",
+            "text_position": "place-self-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "ET KÜTT, WIE ET KÜTT!",
+            "content": "<p>Aus der Idee wurde ein Business Konzept, in dessen Zentrum umweltbewusste Produktion und menschenfreundliche Arbeitsbedingungen stehen. Und natürlich Socken!<\/p><p><strong>Crazy Socks<\/strong> mit bunten Motiven. Elegante,<strong> farbige Business Socken. Invisible Socks, Sneaker Socken, Kniestrümpfe<\/strong> – einfach alles, was das Herz eines wahren Sockenfans höher schlagen lässt.<\/p>",
+            "link_text": "FINDE JETZT DEINE NEUE LIEBLINGSSOCKE",
+            "link_url": "shopify:\/\/collections",
+            "rating_name": "",
+            "rating_text": "",
+            "background": "#42195a",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#6ed972",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_P3NP8L"
+      ],
+      "custom_css": [
+        "{background-color: #42195a;}",
+        " {padding-top: 50px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "rich_text_xq8eqk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9mxEA8": {
+          "type": "heading",
+          "settings": {
+            "text": "Hochwertige SOCKEN FÜR DIE (UM)WELT!",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "subheading_EM4THF": {
+          "type": "subheading",
+          "settings": {
+            "text": "Nachhaltige Produktion und umweltbewusste Materialien."
+          }
+        }
+      },
+      "block_order": [
+        "heading_9mxEA8",
+        "subheading_EM4THF"
+      ],
+      "custom_css": [
+        "{padding-top: 50px;}",
+        ".bold {font-weight: 500; font-size: 1.25rem; color: #632b99;}",
+        ".section-full {padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_QJjVBh": {
+      "type": "multi-column",
+      "blocks": {
+        "item_Tm3C6L": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Wenn du auf der Suche nach <strong>hochwertigen Socken <\/strong>bist, bist du bei Patron Socks genau richtig! Unsere Socken sind nicht nur <strong>bequem und langlebig, <\/strong>sondern auch<strong> stilvoll und umweltfreundlich.<\/strong><\/p><p>Wir legen großen Wert auf Qualität und verwenden nur die besten Materialien wie <strong>Baumwolle und recyceltes Polyester<\/strong>, um sicherzustellen, dass unsere Socken <strong>langlebig und bequem<\/strong> sind. Unsere Socken sind auch <strong>atmungsaktiv<\/strong> und halten deine Füße<strong> trocken und frisch.<\/strong><\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_JF9YBV": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Bei uns findest du eine <strong>große Auswahl an Socken<\/strong> in verschiedenen Farben und Mustern, sodass du garantiert etwas findest, das deinem Stil entspricht. Ob du es klassisch, modern oder auffällig magst – bei uns wirst du fündig.<\/p><p>Darüber hinaus setzen wir uns für Nachhaltigkeit ein und verwenden <strong>umweltfreundliche Materialien und Produktionsprozesse<\/strong>. So kannst du sicher sein, dass du nicht nur hochwertige Socken, sondern auch umweltfreundliche Produkte kaufst.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_P9M3xB": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Unser Kundenservice ist ebenfalls ein wichtiger Teil unserer Philosophie. Bei Fragen oder Problemen stehen wir dir jederzeit zur Verfügung und kümmern uns um eine schnelle und zufriedenstellende Lösung.<\/p><p><strong>Überzeuge dich selbst von unseren hochwertigen Socken und bestelle noch heute bei Patron Socks!<\/strong><\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_Tm3C6L",
+        "item_JF9YBV",
+        "item_P9M3xB"
+      ],
+      "custom_css": [
+        "img {width: 15vw;}",
+        "@media (max-width: 767px) {img {width: 40vw; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured_collection_XGUxtn": {
+      "type": "featured-collection",
+      "custom_css": [],
+      "settings": {
+        "collection": "",
+        "products": [
+          "pinguin-sportsocken",
+          "herz-sportsocken",
+          "zwinker-smile-sportsocken",
+          "sportsocken-halbhoch"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 4,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_jwYngM": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/nachhaltigke-socken_jpg.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_nGb4w3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6LMUmd": {
+          "type": "heading",
+          "settings": {
+            "text": "BUNTE BUSINESS SOCKEN – FÜR DEINEN STARKEN AUFTRITT!",
+            "heading_tag": "h3",
+            "text_color": "#000000",
+            "gradient": ""
+          }
+        },
+        "subheading_TMJBWd": {
+          "type": "subheading",
+          "settings": {
+            "text": "Entdecke Eleganz in jedem Schritt mit Patron Socks"
+          }
+        },
+        "richtext_xDA4Xf": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Dein Stil spricht Bände über deine Persönlichkeit – warum sollten deine Socken nicht genauso <strong>ausdrucksstark<\/strong> sein?<\/p><p>Bei Patron Socks verstehen wir, dass in der Business Welt jede Nuance deines Looks zählt. Deshalb präsentieren wir eine <strong>Kollektion von hochwertigen, farbenfrohen Business Socken<\/strong>, die deinen Auftritt abrunden und deine Persönlichkeit unterstreichen.<\/p><p>Unsere <a href=\"\/collections\/kniestrumpfe-1\" title=\"Kniestrümpfe\">exklusiven Kniestrümpfe<\/a> und <a href=\"\/collections\/premium-business-socken-1\" title=\"Premium Business Socken\">halbhohen Premium Socken<\/a> sind mehr als nur Accessoires – sie sind ein Statement. Handgefertigt aus feinsten Materialien, vereinen sie Qualität und Stil auf eine unvergleichliche Weise. Doch das ist erst der Anfang. <\/p><p><strong>Wir zelebrieren Individualität!<\/strong> Warum sich auf das Gewöhnliche beschränken, wenn du das Außergewöhnliche haben kannst?<\/p><p>Und als besonderes Highlight bieten wir sogar Socken vom renommierten Markenhersteller <a href=\"\/products\/cinque-socken\" title=\"CINQUE SOCKEN\">CINQUE<\/a> und <a href=\"\/collections\/luxus-socken-1\" title=\"Luxus Socken\">einzigartige Luxus Socken<\/a>. Diese Socken vereinen Stil und Klasse auf eine Weise, die deinen Auftritt unvergesslich machen.<\/p><p>Bei Patron Socks suchen wir nicht nur nach Kunden – sondern nach Menschen, die <strong>das Besondere<\/strong> suchen. Diejenigen, die wissen, dass <strong>die richtigen Socken<\/strong> genauso wichtig sind wie das perfekte Hemd oder der perfekte Anzug.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6LMUmd",
+        "subheading_TMJBWd",
+        "richtext_xDA4Xf"
+      ],
+      "custom_css": [
+        "{padding-top: 0px;}",
+        ".bold {font-weight: 500; font-size: 1.25rem; color: #632b99;}",
+        ".section-full {padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_qWhWc4": {
+      "type": "multi-column",
+      "blocks": {
+        "item_q7gd3X": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Dein Stil spricht Bände über deine Persönlichkeit – warum sollten deine Socken nicht genauso <strong>ausdrucksstark<\/strong> sein?<\/p><p>Bei PATRON SOCKS verstehen wir, dass in der Business Welt jede Nuance deines Looks zählt. Deshalb präsentieren wir eine <strong>Kollektion von hochwertigen, farbenfrohen Business Socken<\/strong>, die deinen Auftritt abrunden und deine Persönlichkeit unterstreichen.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_RPyeFU": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Unsere <a href=\"\/collections\/kniestrumpfe-1\" title=\"Kniestrümpfe\">exklusiven Kniestrümpfe<\/a> und <a href=\"\/collections\/premium-business-socken-1\" title=\"Premium Business Socken\">halbhohen Premium Socken<\/a> sind mehr als nur Accessoires – sie sind ein Statement. Handgefertigt aus feinsten Materialien, vereinen sie Qualität und Stil auf eine unvergleichliche Weise. Doch das ist erst der Anfang. <\/p><p><strong>Wir zelebrieren Individualität!<\/strong> Warum sich auf das Gewöhnliche beschränken, wenn du das Außergewöhnliche haben kannst?<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_74BaP3": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "<p>Und als besonderes Highlight bieten wir Socken unserer Premium-Lizenzmarke <a href=\"\/products\/cinque-socken\" title=\"CINQUE SOCKEN\">CINQUE<\/a> und trendige <a href=\"\/collections\/luxus-socken-1\" title=\"Luxus Socken\">Socken im italienischen Style<\/a>. Sie vereinen Stil und Klasse auf eine Weise, die deinen Auftritt unvergesslich machen.<\/p><p>Bei PATRON SOCKS sprechen wir Menschen an, die <strong>das Besondere<\/strong> suchen und wissen, dass <strong>die richtigen Socken<\/strong> genauso wichtig sind wie das perfekte Hemd oder der perfekte Anzug.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_q7gd3X",
+        "item_RPyeFU",
+        "item_74BaP3"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "collection_list_c7abci": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_Wiyidy": {
+          "type": "collection",
+          "settings": {
+            "collection": "kniestrumpfe",
+            "image": "shopify:\/\/shop_images\/kniestruempfe-schwarz-grau-herren-1.jpg",
+            "subheading": "",
+            "title": "Kniestrümpfe",
+            "url": "shopify:\/\/collections\/kniestrumpfe",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_mbndam": {
+          "type": "collection",
+          "settings": {
+            "collection": "premium-business-socken",
+            "image": "shopify:\/\/shop_images\/premium-business-socken-blau.jpg",
+            "subheading": "",
+            "title": "Premium Business",
+            "url": "shopify:\/\/collections\/premium-business-socken",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_PdggX3": {
+          "type": "collection",
+          "settings": {
+            "collection": "cinque-socken",
+            "image": "shopify:\/\/shop_images\/cinque-kollektion.png",
+            "subheading": "",
+            "title": "Cinque Socken",
+            "url": "shopify:\/\/collections\/cinque-socken",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_7KT87b": {
+          "type": "collection",
+          "settings": {
+            "collection": "luxus-socken",
+            "image": "shopify:\/\/shop_images\/luxus-socken-italian-style_2.jpg",
+            "subheading": "",
+            "title": "Luxus Socken",
+            "url": "shopify:\/\/collections\/luxus-socken",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_Wiyidy",
+        "collection_mbndam",
+        "collection_PdggX3",
+        "collection_7KT87b"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": false,
+        "collections_per_row_mobile": "2",
+        "collections_per_row": 4,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "faq_KVEfLw": {
+      "type": "faq",
+      "blocks": {
+        "item_HjyXNn": {
+          "type": "item",
+          "settings": {
+            "title": "VERSENDET IHR AUCH INS AUSLAND?",
+            "content": "<p>Ja, wir versenden <strong>weltweit<\/strong> und innerhalb von Deutschland versandkostenfrei.<\/p><p>Bitte beachtet bei Bestellungen außerhalb der EU, dass der von uns  angegebene Produktpreis ohne Zoll und Steuern ist.  <\/p><p>Wir versenden über den Service DDU (Delivery Duty Unpaid). Die anfallenden Einfuhrumsatzsteuer sowie evtl. Zollgebühren werden Dir von dem Kurierdienst separat in Rechnung gestellt. Diese Kosten können von uns nicht abgeschätzt werden. Bitte setzt euch mit eurer zuständigen Zollbehörde in Verbindung.  <\/p>"
+          }
+        },
+        "item_w9CbYb": {
+          "type": "item",
+          "settings": {
+            "title": "WIE LÖSE ICH MEINEN GUTSCHEIN EIN?",
+            "content": "<p>Du kannst Deinen Gutschein im Warenkorb unter “Gutscheincode” eintragen und anschließend “Gutschein  anwenden” klicken.<\/p><p>Bitte beachte außerdem die individuellen Bedingungen, die für die jeweiligen Gutscheine oder Rabattcodes gelten. Diese stehen in der Regel im Sternchentext. <\/p>"
+          }
+        },
+        "item_zERwy9": {
+          "type": "item",
+          "settings": {
+            "title": "WIE WASCHE ICH MEINE SOCKEN?",
+            "content": "<p>Unsere bunten PATRON SOCKS Socken können bei <strong>4o Grad<\/strong> in der Waschmaschine gewaschen werden.<\/p><p>Wir empfehlen, Socken <strong>auf links zu waschen<\/strong>. Auf diese Weise werden Hautpartikel der Füße deutlich besser ausgespült. <\/p>"
+          }
+        },
+        "item_ifYVkM": {
+          "type": "item",
+          "settings": {
+            "title": "WIE MELDE ICH MICH ZUM NEWSLETTER AN?",
+            "content": "<p>Danke! Wir freuen uns, dass du dich für unseren Socksletter interessierst!<\/p><p>Scrolle einfach auf unserer Startseite nach unten – dort kannst du dich für den Socksletter anmelden. Als Dankeschön erhältst du von uns einen 10% Gutscheincode.<\/p>"
+          }
+        },
+        "item_7EHDkW": {
+          "type": "item",
+          "settings": {
+            "title": "WANN IST MEINE GRÖSSE WIEDER VERFÜGBAR?",
+            "content": "<p>Wir versuchen immer  schnellstmöglich alle Größen anzubieten. <\/p><p>Sollte Deine Größe ausnahmsweise nicht verfügbar sein, kannst Du uns gerne eine Email an die hello@patronsocks.de senden. Wir melden uns bei Dir sobald Deine Lieblingssocke wieder da ist.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_HjyXNn",
+        "item_w9CbYb",
+        "item_zERwy9",
+        "item_ifYVkM",
+        "item_7EHDkW"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "NOCH  FRAGEN OFFEN?",
+        "content": "<p>Falls Deine Frage hier nicht beantwortet wird, schreib uns gerne eine Mail und wir melden uns so schnell es geht bei Dir.<\/p>",
+        "team_avatar": "shopify:\/\/shop_images\/Petra-und-Leo-901x1024.png",
+        "team_avatar_width": 160,
+        "support_hours": "Du kannst uns jederzeit eine E-Mail schreiben oder unten auf das Kontaktformular klicken.",
+        "answer_time": "Durchschnittliche Antwort: 24h",
+        "button_text": "KONTAKT AUFNEHMEN",
+        "button_url": "shopify:\/\/pages\/contact",
+        "text_position": "start",
+        "background": "#632b99",
+        "background_gradient": "radial-gradient(rgba(99, 43, 153, 1), rgba(66, 25, 90, 1) 100%)",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "#6dd972",
+        "button_text_color": "",
+        "accordion_background": "#6dd972",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_zDBX7w",
+    "rich_text_TtHK3j",
+    "multi_column_CnazgH",
+    "media_with_text_XqQcqH",
+    "rich_text_xq8eqk",
+    "multi_column_QJjVBh",
+    "featured_collection_XGUxtn",
+    "image_with_text_overlay_jwYngM",
+    "rich_text_nGb4w3",
+    "multi_column_qWhWc4",
+    "collection_list_c7abci",
+    "faq_KVEfLw"
+  ]
+}

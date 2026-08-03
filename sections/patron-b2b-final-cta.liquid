@@ -1,0 +1,55 @@
+{%- render 'section-spacing-collapsing' -%}
+{%- liquid
+  assign wa = section.settings.whatsapp_number | remove: ' ' | remove: '+' | remove: '-' | remove: '(' | remove: ')'
+  capture wa_url
+    echo 'https://wa.me/' | append: wa | append: '?text=' | append: section.settings.whatsapp_message | url_encode
+  endcapture
+-%}
+
+<style>
+  #shopify-section-{{ section.id }} .patron-final-shell {
+    width: min(var(--container-max-width), calc(100% - 40px)); margin-inline: auto;
+    display: grid; grid-template-columns: minmax(0,1fr) auto; gap: var(--spacing-10); align-items: center;
+  }
+  @media screen and (max-width: 799px) {
+    #shopify-section-{{ section.id }} .patron-final-shell { width: min(100% - 24px, var(--container-max-width)); grid-template-columns: 1fr; }
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  <div class="patron-final-shell">
+    <div class="prose">
+      {%- if section.settings.subheading != blank -%}<p class="subheading">{{ section.settings.subheading }}</p>{%- endif -%}
+      <h2 class="h2">{% render 'styled-text', content: section.settings.title, gradient: section.settings.heading_gradient %}</h2>
+      {{ section.settings.content }}
+    </div>
+    <div class="button-group">
+      {% render 'button', href: wa_url, content: section.settings.whatsapp_label, size: 'xl', background: section.settings.primary_background, text_color: section.settings.primary_text, external: true %}
+      {% render 'button', href: '#patron-b2b-contact', content: section.settings.secondary_label, size: 'xl', style: 'outline' %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name":"Patron – Abschluss CTA",
+  "class":"shopify-section--patron-final-cta",
+  "tag":"section",
+  "settings":[
+    {"type":"checkbox","id":"full_width","label":"Full width","default":true},
+    {"type":"color","id":"background","label":"Background","default":"#25d366"},
+    {"type":"color","id":"text_color","label":"Text","default":"#121212"},
+    {"type":"text","id":"subheading","label":"Subheading","default":"Von der Idee bis zum Versand"},
+    {"type":"text","id":"title","label":"Heading","default":"Schickt uns euer Logo. Wir machen daraus ein komplettes Projekt."},
+    {"type":"richtext","id":"content","label":"Content","default":"<p>Design, Produktion, Verpackung, Konfektionierung und Versand aus einer Hand.</p>"},
+    {"type":"text","id":"whatsapp_number","label":"WhatsApp number","default":"491234567890"},
+    {"type":"textarea","id":"whatsapp_message","label":"WhatsApp message","default":"Hallo Patron Socks, wir interessieren uns für individuelle Socken und möchten einen kostenlosen ersten Designvorschlag erhalten."},
+    {"type":"text","id":"whatsapp_label","label":"WhatsApp button","default":"WhatsApp Anfrage starten"},
+    {"type":"text","id":"secondary_label","label":"Secondary button","default":"Designvorschlag erhalten"},
+    {"type":"color","id":"primary_background","label":"Primary button background","default":"#121212"},
+    {"type":"color","id":"primary_text","label":"Primary button text","default":"#ffffff"},
+    {"type":"color_background","id":"heading_gradient","label":"Heading gradient"}
+  ],
+  "presets":[{"name":"Patron – Abschluss CTA"}]
+}
+{% endschema %}

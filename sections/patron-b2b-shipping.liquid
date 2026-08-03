@@ -1,0 +1,84 @@
+{%- render 'section-spacing-collapsing' -%}
+
+<style>
+  #shopify-section-{{ section.id }} .patron-shipping-shell {
+    width: min(var(--container-max-width), calc(100% - 40px)); margin-inline: auto;
+  }
+  #shopify-section-{{ section.id }} .patron-shipping-grid {
+    display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: var(--spacing-5); margin-top: var(--spacing-8);
+  }
+  #shopify-section-{{ section.id }} .patron-shipping-card {
+    min-height: 215px; padding: var(--spacing-7);
+    border: 1px solid rgb(var(--text-color) / .12); border-radius: var(--rounded-lg);
+    background: rgb(var(--text-color) / .025);
+  }
+  #shopify-section-{{ section.id }} .patron-shipping-card span {
+    font-size: var(--text-xs); font-weight: 700; letter-spacing: .12em; opacity: .6;
+  }
+  #shopify-section-{{ section.id }} .patron-shipping-card h3 { margin: var(--spacing-8) 0 var(--spacing-3); }
+  #shopify-section-{{ section.id }} .patron-shipping-card p { margin: 0; opacity: .68; font-size: var(--text-sm); }
+  @media screen and (max-width: 999px) {
+    #shopify-section-{{ section.id }} .patron-shipping-grid { grid-template-columns: repeat(2,1fr); }
+  }
+  @media screen and (max-width: 699px) {
+    #shopify-section-{{ section.id }} .patron-shipping-shell { width: min(100% - 24px, var(--container-max-width)); }
+    #shopify-section-{{ section.id }} .patron-shipping-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  <div class="patron-shipping-shell">
+    <div class="prose">
+      {%- if section.settings.subheading != blank -%}<p class="subheading">{{ section.settings.subheading }}</p>{%- endif -%}
+      <h2 class="h2">{% render 'styled-text', content: section.settings.title, gradient: section.settings.heading_gradient %}</h2>
+      {{ section.settings.content }}
+    </div>
+    <div class="patron-shipping-grid">
+      {%- for block in section.blocks -%}
+        <article class="patron-shipping-card" {{ block.shopify_attributes }}>
+          <span>0{{ forloop.index }}</span>
+          <h3 class="h5">{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name":"Patron – Versandlösung",
+  "class":"shopify-section--patron-shipping",
+  "tag":"section",
+  "settings":[
+    {"type":"checkbox","id":"full_width","label":"Full width","default":true},
+    {"type":"color","id":"background","label":"Background","default":"#ffffff"},
+    {"type":"color_background","id":"background_gradient","label":"Background gradient"},
+    {"type":"color","id":"text_color","label":"Text","default":"#121212"},
+    {"type":"text","id":"subheading","label":"Subheading","default":"Versandlösung"},
+    {"type":"text","id":"title","label":"Heading","default":"Wir übernehmen den Weg bis zur Haustür."},
+    {"type":"richtext","id":"content","label":"Content","default":"<p>Sammellieferung oder Einzelversand – exakt passend zu eurem Projekt.</p>"},
+    {"type":"color_background","id":"heading_gradient","label":"Heading gradient"}
+  ],
+  "blocks":[
+    {
+      "type":"benefit","name":"Benefit","limit":6,
+      "settings":[
+        {"type":"text","id":"title","label":"Title","default":"Komplette Konfektionierung"},
+        {"type":"textarea","id":"text","label":"Text","default":"Jedes Set wird nach euren Vorgaben zusammengestellt."}
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Patron – Versandlösung",
+      "blocks":[
+        {"type":"benefit","settings":{"title":"Komplette Konfektionierung","text":"Jedes Set wird nach euren Vorgaben zusammengestellt."}},
+        {"type":"benefit","settings":{"title":"Einzelversand","text":"Direkt an Mitarbeiter, Kunden oder Geschäftspartner."}},
+        {"type":"benefit","settings":{"title":"Versand zum Wunschtermin","text":"Für Weihnachten, Kampagnenstart, Messe oder Jubiläum."}},
+        {"type":"benefit","settings":{"title":"Persönliche Projektbegleitung","text":"Ein Ansprechpartner koordiniert Gestaltung, Produktion und Versand."}}
+      ]
+    }
+  ]
+}
+{% endschema %}

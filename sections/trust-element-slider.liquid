@@ -1,0 +1,167 @@
+<div class="SellingPointSlider swiper">
+  <ul class="u-NoList swiper-wrapper">
+    {% for block in section.blocks %}
+      <li class="SellingPoint swiper-slide">
+        <div class="SellingPoint-element">
+          <div class="rsp-Image">
+            <img
+              src="{{ block.settings.image | img_url: '30x' }}&width=30"
+              alt="{{ block.settings.text }}" width="30" height="23" loading="lazy" fetchpriority="auto"
+              class="rsp-Image_Image">
+          </div>{{ block.settings.text }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<style>
+  .swiper-wrapper {
+    box-sizing: content-box;
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .swiper-slide, .swiper-wrapper {
+    transform: translateZ(0);
+  }
+
+  .SellingPointSlider {
+    background-color: {{ section.settings.backgroundColor }};
+    color: #fff;
+    padding: 13px 0;
+  }
+
+  @media screen and (min-width: 1240px) {
+    .SellingPointSlider .swiper-wrapper {
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+  .SellingPoint {
+    align-items: center;
+    display: flex;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    justify-content: center;
+    letter-spacing: .32px;
+    line-height: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: auto;
+  }
+
+  @media screen and (min-width: 1240px) {
+    .SellingPoint.swiper-slide {
+      flex-shrink: 1;
+    }
+  }
+
+  .SellingPoint .SellingPoint-element {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+  }
+
+  .SellingPoint .rsp-Image {
+    margin-right: 8px;
+  }
+
+  .SellingPoint .rsp-Image_Image {
+    position: unset;
+    max-width: unset;
+  }
+</style>
+
+<link
+  rel="stylesheet"
+  href="{{ 'swiper-bundle.css' | asset_url }}"
+/>
+
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.js' | asset_url }}';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.SellingPointSlider', {
+      slidesPerView: 1,
+      spaceBetween: 120,
+      centerInsufficientSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      breakpoints: {
+        1008: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1240: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+      touchEventsTarget: 'container',
+      simulateTouch: true,
+      touchRatio: 1,
+      touchAngle: 45,
+      grabCursor: true,
+      slideToClickedSlide: true,
+    });
+  });
+</script>
+
+{% schema %} 
+{
+  "name": "Trust Element Slideshow",
+  "settings": [
+    {
+      "type": "color",
+      "id": "backgroundColor",
+      "label": "Background Color",
+      "default": "#323232"
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+     {
+       "name": "Trust Element",
+       "type": "slide",
+       "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "text"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+       ]
+     }
+  ],
+  "presets": [
+    {
+      "name": "Trust Element Slideshow",
+      "blocks": [
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
