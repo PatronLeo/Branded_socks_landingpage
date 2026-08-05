@@ -1,15 +1,10 @@
 {%- render 'section-spacing-collapsing' -%}
 {%- liquid
   assign wa = section.settings.whatsapp_number | remove: ' ' | remove: '+' | remove: '-' | remove: '(' | remove: ')'
-  capture wa_url
-    echo 'https://wa.me/' | append: wa | append: '?text=' | append: section.settings.whatsapp_message | url_encode
-  endcapture
-  capture mail_subject
-    echo section.settings.mail_subject | url_encode
-  endcapture
-  capture mail_url
-    echo 'mailto:' | append: section.settings.contact_email | append: '?subject=' | append: mail_subject
-  endcapture
+  assign wa_msg = section.settings.whatsapp_message | url_encode
+  assign wa_url = 'https://wa.me/' | append: wa | append: '?text=' | append: wa_msg
+  assign mail_subject = section.settings.mail_subject | url_encode
+  assign mail_url = 'mailto:' | append: section.settings.contact_email | append: '?subject=' | append: mail_subject
 -%}
 
 <style>

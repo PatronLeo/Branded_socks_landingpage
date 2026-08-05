@@ -21,13 +21,18 @@
     padding: 0 24px;
     display: flex; align-items: center; justify-content: center;
     min-width: 180px; height: 64px;
-    color: {{ section.settings.text_color }};
-    font-weight: 700; font-size: 20px; letter-spacing: .02em;
-    opacity: .82;
   }
   #shopify-section-{{ section.id }} .patronb2b-refs__item img{
     max-width: 140px; max-height: 64px; width: auto; height: auto; object-fit: contain;
     filter: {{ section.settings.logo_filter }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-refs__placeholder{
+    width: 140px; height: 48px;
+    border: 1px dashed rgba(255,255,255,.35);
+    background: rgba(255,255,255,.06);
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,.5);
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
   }
   @keyframes patronb2bMarquee{
     from{ transform: translateX(0); }
@@ -49,7 +54,7 @@
           {%- if block.settings.image != blank -%}
             {{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', alt: block.settings.name, widths: '160,280,400' }}
           {%- else -%}
-            <span>{{ block.settings.name }}</span>
+            <div class="patronb2b-refs__placeholder" title="{{ block.settings.name }}">Logo</div>
           {%- endif -%}
         </div>
       {%- endfor -%}
@@ -59,7 +64,7 @@
           {%- if block.settings.image != blank -%}
             {{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', alt: '', widths: '160,280,400' }}
           {%- else -%}
-            <span>{{ block.settings.name }}</span>
+            <div class="patronb2b-refs__placeholder">Logo</div>
           {%- endif -%}
         </div>
       {%- endfor -%}
