@@ -1,0 +1,117 @@
+{%- render 'section-spacing-collapsing' -%}
+
+<style>
+  #shopify-section-{{ section.id }} .patronb2b-ben-shell{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-ben-eyebrow{
+    font-size: 14px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+    color: {{ section.settings.accent_color }};
+    text-align: center; margin-bottom: 8px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-ben-title{
+    font-size: 30px; font-weight: 800; margin: 0 0 40px; text-align: center;
+    color: {{ section.settings.text_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-ben-grid{
+    display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 40px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-ben-item{
+    display: flex; gap: 14px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-ben-item__check{
+    flex-shrink: 0; width: 26px; height: 26px;
+    border: 2px solid {{ section.settings.accent_color }};
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: {{ section.settings.accent_color }};
+    font-size: 14px; font-weight: 700;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-ben-item__body{
+    font-size: 15px; line-height: 1.5;
+    color: {{ section.settings.text_color }}; opacity: .82;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-ben-item__body strong{
+    color: {{ section.settings.text_color }}; opacity: 1;
+    display: block; margin-bottom: 4px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-ben-quote{
+    border-left: 3px solid {{ section.settings.accent_color }};
+    padding-left: 20px;
+    font-size: 20px; font-weight: 700;
+    color: {{ section.settings.text_color }};
+  }
+  @media screen and (max-width: 699px){
+    #shopify-section-{{ section.id }} .patronb2b-ben-grid{ grid-template-columns: 1fr; }
+    #shopify-section-{{ section.id }} .patronb2b-ben-title{ font-size: 24px; }
+    #shopify-section-{{ section.id }} .patronb2b-ben-shell{ padding: 56px 20px; }
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  <div class="patronb2b-ben-shell">
+    {%- if section.settings.subheading != blank -%}
+      <div class="patronb2b-ben-eyebrow">{{ section.settings.subheading | escape }}</div>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="patronb2b-ben-title">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+    <div class="patronb2b-ben-grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'benefit' -%}
+          <div class="patronb2b-ben-item" {{ block.shopify_attributes }}>
+            <div class="patronb2b-ben-item__check" aria-hidden="true">✓</div>
+            <div class="patronb2b-ben-item__body">
+              <strong>{{ block.settings.title }}</strong>
+              {{ block.settings.text }}
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.quote != blank -%}
+      <div class="patronb2b-ben-quote">„{{ section.settings.quote | strip_html }}"</div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Patron B2B – Warum Socken",
+  "class": "shopify-section--patronb2b-benefits",
+  "tag": "section",
+  "settings": [
+    {"type": "checkbox", "id": "full_width", "label": "Full width", "default": true},
+    {"type": "color", "id": "background", "label": "Background", "default": "#FFFFFF"},
+    {"type": "color", "id": "text_color", "label": "Text color", "default": "#1A1A1A"},
+    {"type": "color", "id": "accent_color", "label": "Accent color", "default": "#632B99"},
+    {"type": "text", "id": "subheading", "label": "Eyebrow", "default": "Warum Socken als Merch?"},
+    {"type": "text", "id": "title", "label": "Heading", "default": "Ein Werbemittel, das wirklich getragen wird."},
+    {"type": "text", "id": "quote", "label": "Quote", "default": "Bleiben im Kopf – und am Fuß."}
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "limit": 8,
+      "settings": [
+        {"type": "text", "id": "title", "label": "Title", "default": "Täglich getragen, täglich sichtbar"},
+        {"type": "textarea", "id": "text", "label": "Text", "default": "Socken bleiben im Kleiderschrank – und am Fuß eurer Zielgruppe."}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Patron B2B – Warum Socken",
+      "blocks": [
+        {"type": "benefit", "settings": {"title": "Täglich getragen, täglich sichtbar", "text": "Socken bleiben im Kleiderschrank – und am Fuß eurer Zielgruppe."}},
+        {"type": "benefit", "settings": {"title": "Hohe Qualität, positive Markenassoziation", "text": "Gute Socken zahlen direkt auf euer Markenerlebnis ein."}},
+        {"type": "benefit", "settings": {"title": "Praktisches Geschenk mit echter Wertschätzung", "text": "Kein Wegwerf-Give-away, sondern etwas, das genutzt wird."}},
+        {"type": "benefit", "settings": {"title": "Nachhaltige Materialien optional", "text": "GOTS-zertifizierte Bio-Baumwolle stärkt euer Image."}}
+      ]
+    }
+  ]
+}
+{% endschema %}

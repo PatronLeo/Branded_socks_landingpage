@@ -1,0 +1,138 @@
+{%- render 'section-spacing-collapsing' -%}
+
+<style>
+  #shopify-section-{{ section.id }} .patronb2b-stats-shell{
+    max-width: var(--container-max-width, 1200px);
+    margin: 0 auto;
+    padding: 56px 24px;
+    display: grid;
+    grid-template-columns: repeat({{ section.blocks.size | at_least: 1 }}, 1fr);
+    gap: 32px;
+    text-align: center;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-stat--icons .patronb2b-stat__icon-wrap{
+    width: 88px; height: 88px; border-radius: 50%;
+    background: {{ section.settings.icon_bg }};
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-stat--icons .patronb2b-stat__icon svg{
+    width: 34px; height: 34px; display: block;
+    stroke: {{ section.settings.accent_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-stat__number{
+    font-size: 30px; font-weight: 800; color: {{ section.settings.accent_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-stat__title{
+    font-size: 17px; font-weight: 800; color: {{ section.settings.text_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-stat__text{
+    font-size: 14px; color: {{ section.settings.text_color }};
+    opacity: .72; margin-top: 4px;
+  }
+  @media screen and (max-width: 899px){
+    #shopify-section-{{ section.id }} .patronb2b-stats-shell{ grid-template-columns: repeat(2, 1fr); padding: 40px 20px; }
+  }
+  @media screen and (max-width: 499px){
+    #shopify-section-{{ section.id }} .patronb2b-stats-shell{ grid-template-columns: 1fr; }
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  <div class="patronb2b-stats-shell">
+    {%- for block in section.blocks -%}
+      <div class="patronb2b-stat patronb2b-stat--{{ section.settings.display_style }}" {{ block.shopify_attributes }}>
+        {%- if section.settings.display_style == 'icons' -%}
+          <div class="patronb2b-stat__icon-wrap">
+            <span class="patronb2b-stat__icon" aria-hidden="true">
+              {%- case block.settings.icon -%}
+                {%- when 'package' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5-9 5-9-5Z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg>
+                {%- when 'clock' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2M20 5l-2.2 2.2"/></svg>
+                {%- when 'star' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.1l1-5.8-4.3-4.1 5.9-.9L12 3Z"/></svg>
+                {%- when 'leaf' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4S13 3 9 7s-2 9-2 9 7 1 11-3 2-9 2-9Z"/><path d="M6 18c1-3 3-6 6-8"/></svg>
+                {%- when 'heart' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4.4-8.8 10.9-8.8 10.9S3.2 13 3.2 8.6a4.6 4.6 0 0 1 8.8-1.8 4.6 4.6 0 0 1 8.8 1.8Z"/></svg>
+                {%- when 'shield' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3Z"/></svg>
+                {%- else -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></svg>
+              {%- endcase -%}
+            </span>
+          </div>
+        {%- else -%}
+          <div class="patronb2b-stat__number">{{ block.settings.number }}</div>
+        {%- endif -%}
+        {%- if section.settings.display_style == 'icons' -%}
+          <div class="patronb2b-stat__title">{{ block.settings.title }}</div>
+        {%- endif -%}
+        <div class="patronb2b-stat__text">{{ block.settings.text }}</div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Patron B2B – Stats",
+  "class": "shopify-section--patronb2b-stats",
+  "tag": "section",
+  "settings": [
+    {"type": "checkbox", "id": "full_width", "label": "Full width", "default": true},
+    {"type": "color", "id": "background", "label": "Background", "default": "#FFFFFF"},
+    {"type": "color", "id": "text_color", "label": "Text color", "default": "#1A1A1A"},
+    {"type": "color", "id": "accent_color", "label": "Accent color", "default": "#632B99"},
+    {"type": "color", "id": "icon_bg", "label": "Icon background", "default": "#F0E8F7"},
+    {
+      "type": "select",
+      "id": "display_style",
+      "label": "Display style",
+      "options": [
+        {"value": "icons", "label": "Icon + title + text"},
+        {"value": "numbers", "label": "Big number + text"}
+      ],
+      "default": "icons"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "limit": 6,
+      "settings": [
+        {"type": "text", "id": "title", "label": "Title / label", "default": "Ab 100 Paar"},
+        {"type": "text", "id": "number", "label": "Number (for number style)", "default": "100+"},
+        {"type": "textarea", "id": "text", "label": "Description", "default": "Mindestbestellmenge, Großmengen möglich"},
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {"value": "package", "label": "Package"},
+            {"value": "clock", "label": "Clock"},
+            {"value": "star", "label": "Star"},
+            {"value": "leaf", "label": "Leaf"},
+            {"value": "heart", "label": "Heart"},
+            {"value": "shield", "label": "Shield"}
+          ],
+          "default": "package"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Patron B2B – Stats",
+      "blocks": [
+        {"type": "stat", "settings": {"title": "Ab 100 Paar", "text": "Mindestbestellmenge, Großmengen möglich", "icon": "package"}},
+        {"type": "stat", "settings": {"title": "6 Wochen", "text": "Produktionszeit", "icon": "clock"}},
+        {"type": "stat", "settings": {"title": "24 Std.", "text": "Kostenfreier erster Designvorschlag", "icon": "star"}},
+        {"type": "stat", "settings": {"title": "GOTS Bio", "text": "Zertifizierte Baumwolle, optional", "icon": "leaf"}}
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,82 +1,78 @@
+{%- comment -%}
+  Retained for backwards compatibility. Section now renders the big-number
+  stats row (Ab 100 Paar / 6 Wochen / 24 Std. / GOTS Bio). Use section
+  "patron-b2b-stats" with display_style "numbers" for the same behavior on
+  a fresh install; this section can be removed once the template is republished.
+{%- endcomment -%}
 {%- render 'section-spacing-collapsing' -%}
 
 <style>
-  #shopify-section-{{ section.id }} .patron-shipping-shell {
-    width: min(var(--container-max-width), calc(100% - 40px)); margin-inline: auto;
+  #shopify-section-{{ section.id }} .patronb2b-nums-shell{
+    max-width: var(--container-max-width, 1200px);
+    margin: 0 auto;
+    padding: 56px 24px;
+    display: grid;
+    grid-template-columns: repeat({{ section.blocks.size | at_least: 1 }}, 1fr);
+    gap: 32px;
+    text-align: center;
   }
-  #shopify-section-{{ section.id }} .patron-shipping-grid {
-    display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: var(--spacing-5); margin-top: var(--spacing-8);
+  #shopify-section-{{ section.id }} .patronb2b-nums__num{
+    font-size: 30px; font-weight: 800; margin: 0;
+    color: {{ section.settings.accent_color }};
   }
-  #shopify-section-{{ section.id }} .patron-shipping-card {
-    min-height: 215px; padding: var(--spacing-7);
-    border: 1px solid rgb(var(--text-color) / .12); border-radius: var(--rounded-lg);
-    background: rgb(var(--text-color) / .025);
+  #shopify-section-{{ section.id }} .patronb2b-nums__text{
+    font-size: 14px; margin-top: 6px;
+    color: {{ section.settings.text_color }}; opacity: .72;
   }
-  #shopify-section-{{ section.id }} .patron-shipping-card span {
-    font-size: var(--text-xs); font-weight: 700; letter-spacing: .12em; opacity: .6;
+  @media screen and (max-width: 899px){
+    #shopify-section-{{ section.id }} .patronb2b-nums-shell{ grid-template-columns: repeat(2,1fr); padding: 40px 20px; }
   }
-  #shopify-section-{{ section.id }} .patron-shipping-card h3 { margin: var(--spacing-8) 0 var(--spacing-3); }
-  #shopify-section-{{ section.id }} .patron-shipping-card p { margin: 0; opacity: .68; font-size: var(--text-sm); }
-  @media screen and (max-width: 999px) {
-    #shopify-section-{{ section.id }} .patron-shipping-grid { grid-template-columns: repeat(2,1fr); }
-  }
-  @media screen and (max-width: 699px) {
-    #shopify-section-{{ section.id }} .patron-shipping-shell { width: min(100% - 24px, var(--container-max-width)); }
-    #shopify-section-{{ section.id }} .patron-shipping-grid { grid-template-columns: 1fr; }
+  @media screen and (max-width: 499px){
+    #shopify-section-{{ section.id }} .patronb2b-nums-shell{ grid-template-columns: 1fr; }
   }
 </style>
 
 <div {% render 'section-properties' %}>
-  <div class="patron-shipping-shell">
-    <div class="prose">
-      {%- if section.settings.subheading != blank -%}<p class="subheading">{{ section.settings.subheading }}</p>{%- endif -%}
-      <h2 class="h2">{% render 'styled-text', content: section.settings.title, gradient: section.settings.heading_gradient %}</h2>
-      {{ section.settings.content }}
-    </div>
-    <div class="patron-shipping-grid">
-      {%- for block in section.blocks -%}
-        <article class="patron-shipping-card" {{ block.shopify_attributes }}>
-          <span>0{{ forloop.index }}</span>
-          <h3 class="h5">{{ block.settings.title }}</h3>
-          <p>{{ block.settings.text }}</p>
-        </article>
-      {%- endfor -%}
-    </div>
+  <div class="patronb2b-nums-shell">
+    {%- for block in section.blocks -%}
+      <div {{ block.shopify_attributes }}>
+        <div class="patronb2b-nums__num">{{ block.settings.title }}</div>
+        <div class="patronb2b-nums__text">{{ block.settings.text }}</div>
+      </div>
+    {%- endfor -%}
   </div>
 </div>
 
 {% schema %}
 {
-  "name":"Patron – Versandlösung",
-  "class":"shopify-section--patron-shipping",
-  "tag":"section",
-  "settings":[
-    {"type":"checkbox","id":"full_width","label":"Full width","default":true},
-    {"type":"color","id":"background","label":"Background","default":"#ffffff"},
-    {"type":"color_background","id":"background_gradient","label":"Background gradient"},
-    {"type":"color","id":"text_color","label":"Text","default":"#121212"},
-    {"type":"text","id":"subheading","label":"Subheading","default":"Versandlösung"},
-    {"type":"text","id":"title","label":"Heading","default":"Wir übernehmen den Weg bis zur Haustür."},
-    {"type":"richtext","id":"content","label":"Content","default":"<p>Sammellieferung oder Einzelversand – exakt passend zu eurem Projekt.</p>"},
-    {"type":"color_background","id":"heading_gradient","label":"Heading gradient"}
+  "name": "Patron B2B – Kennzahlen",
+  "class": "shopify-section--patronb2b-nums",
+  "tag": "section",
+  "settings": [
+    {"type": "checkbox", "id": "full_width", "label": "Full width", "default": true},
+    {"type": "color", "id": "background", "label": "Background", "default": "#F2F1F1"},
+    {"type": "color", "id": "text_color", "label": "Text color", "default": "#1A1A1A"},
+    {"type": "color", "id": "accent_color", "label": "Accent color", "default": "#632B99"}
   ],
-  "blocks":[
+  "blocks": [
     {
-      "type":"benefit","name":"Benefit","limit":6,
-      "settings":[
-        {"type":"text","id":"title","label":"Title","default":"Komplette Konfektionierung"},
-        {"type":"textarea","id":"text","label":"Text","default":"Jedes Set wird nach euren Vorgaben zusammengestellt."}
+      "type": "benefit",
+      "name": "Number",
+      "limit": 6,
+      "settings": [
+        {"type": "text", "id": "title", "label": "Big value", "default": "Ab 100 Paar"},
+        {"type": "textarea", "id": "text", "label": "Description", "default": "Mindestbestellmenge, Großmengen möglich"}
       ]
     }
   ],
-  "presets":[
+  "presets": [
     {
-      "name":"Patron – Versandlösung",
-      "blocks":[
-        {"type":"benefit","settings":{"title":"Komplette Konfektionierung","text":"Jedes Set wird nach euren Vorgaben zusammengestellt."}},
-        {"type":"benefit","settings":{"title":"Einzelversand","text":"Direkt an Mitarbeiter, Kunden oder Geschäftspartner."}},
-        {"type":"benefit","settings":{"title":"Versand zum Wunschtermin","text":"Für Weihnachten, Kampagnenstart, Messe oder Jubiläum."}},
-        {"type":"benefit","settings":{"title":"Persönliche Projektbegleitung","text":"Ein Ansprechpartner koordiniert Gestaltung, Produktion und Versand."}}
+      "name": "Patron B2B – Kennzahlen",
+      "blocks": [
+        {"type": "benefit", "settings": {"title": "Ab 100 Paar", "text": "Mindestbestellmenge, Großmengen möglich"}},
+        {"type": "benefit", "settings": {"title": "6 Wochen", "text": "Produktionszeit"}},
+        {"type": "benefit", "settings": {"title": "24 Std.", "text": "Kostenfreier erster Designvorschlag"}},
+        {"type": "benefit", "settings": {"title": "GOTS Bio", "text": "Zertifizierte Baumwolle, optional"}}
       ]
     }
   ]

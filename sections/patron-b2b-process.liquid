@@ -1,72 +1,107 @@
 {%- render 'section-spacing-collapsing' -%}
 
 <style>
-  #shopify-section-{{ section.id }} .patron-process-shell {
-    width: min(var(--container-max-width), calc(100% - 40px));
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
-    gap: var(--spacing-12);
-    align-items: center;
+  #shopify-section-{{ section.id }} .patronb2b-proc-shell{
+    max-width: var(--container-max-width, 1200px);
+    margin: 0 auto;
+    padding: 72px 24px;
   }
-  #shopify-section-{{ section.id }} .patron-process-media {
-    position: relative;
-    min-height: 620px;
+  #shopify-section-{{ section.id }} .patronb2b-proc-eyebrow{
+    font-size: 14px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+    color: {{ section.settings.accent_color }};
+    margin-bottom: 8px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-proc-title{
+    font-size: 32px; font-weight: 800; margin: 0 0 40px;
+    color: {{ section.settings.text_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-proc-grid{
+    display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-proc-media{
+    position: relative; width: 100%; aspect-ratio: 4/3;
+    background: rgba(255,255,255,.08);
+    display: flex; align-items: center; justify-content: center;
     overflow: hidden;
-    border-radius: var(--rounded-lg);
-    background: rgb(var(--text-color) / .06);
   }
-  #shopify-section-{{ section.id }} .patron-process-media img,
-  #shopify-section-{{ section.id }} .patron-process-media video {
+  #shopify-section-{{ section.id }} .patronb2b-proc-media img,
+  #shopify-section-{{ section.id }} .patronb2b-proc-media video{
     position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
   }
-  #shopify-section-{{ section.id }} .patron-process-list { margin-top: var(--spacing-8); }
-  #shopify-section-{{ section.id }} .patron-process-step {
-    display: grid; grid-template-columns: 48px minmax(0,1fr); gap: var(--spacing-5);
-    padding-block: var(--spacing-5); border-bottom: 1px solid rgb(var(--text-color) / .12);
+  #shopify-section-{{ section.id }} .patronb2b-proc-media__dashed{
+    position: absolute; inset: 12px; border: 2px dashed rgba(255,255,255,.3);
+    pointer-events: none; z-index: 2;
   }
-  #shopify-section-{{ section.id }} .patron-process-number {
-    width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
-    background: rgb(var(--text-color)); color: rgb(var(--background)); font-weight: 700;
+  #shopify-section-{{ section.id }} .patronb2b-proc-media__placeholder{
+    position: relative; z-index: 3;
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+    color: {{ section.settings.text_color }};
   }
-  #shopify-section-{{ section.id }} .patron-process-step h3 { margin: 0 0 6px; }
-  #shopify-section-{{ section.id }} .patron-process-step p { margin: 0; opacity: .68; font-size: var(--text-sm); }
-  @media screen and (max-width: 999px) {
-    #shopify-section-{{ section.id }} .patron-process-shell { grid-template-columns: 1fr; }
-    #shopify-section-{{ section.id }} .patron-process-media { min-height: 480px; }
+  #shopify-section-{{ section.id }} .patronb2b-proc-media__play{
+    width: 64px; height: 64px; border-radius: 50%;
+    background: rgba(255,255,255,.15);
+    display: flex; align-items: center; justify-content: center;
   }
-  @media screen and (max-width: 699px) {
-    #shopify-section-{{ section.id }} .patron-process-shell { width: min(100% - 24px, var(--container-max-width)); }
-    #shopify-section-{{ section.id }} .patron-process-media { min-height: 380px; }
+  #shopify-section-{{ section.id }} .patronb2b-proc-media__label{
+    font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; text-align: center;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-proc-steps{
+    display: flex; flex-direction: column; gap: 24px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-proc-step{
+    display: flex; gap: 20px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-proc-step__num{
+    font-size: 28px; font-weight: 800;
+    color: {{ section.settings.text_color }}; opacity: .35;
+    min-width: 36px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-proc-step__title{
+    font-size: 17px; font-weight: 700; margin: 0 0 6px;
+    color: {{ section.settings.text_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-proc-step__text{
+    font-size: 14px; line-height: 1.5; margin: 0;
+    color: {{ section.settings.text_color }}; opacity: .75;
+  }
+  @media screen and (max-width: 999px){
+    #shopify-section-{{ section.id }} .patronb2b-proc-grid{ grid-template-columns: 1fr; gap: 32px; }
+    #shopify-section-{{ section.id }} .patronb2b-proc-title{ font-size: 26px; }
+    #shopify-section-{{ section.id }} .patronb2b-proc-shell{ padding: 56px 20px; }
   }
 </style>
 
 <div {% render 'section-properties' %}>
-  <div class="patron-process-shell">
-    <div class="patron-process-media" reveal-on-scroll="true">
-      {%- if section.settings.video != blank -%}
-        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
-      {%- elsif section.settings.image != blank -%}
-        {{ section.settings.image | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '600,900,1200,1600', sizes: '(max-width: 999px) 100vw, 48vw' }}
-      {%- else -%}
-        {{ 'product-1' | placeholder_svg_tag: 'placeholder' }}
-      {%- endif -%}
-    </div>
-
-    <div>
-      <div class="prose">
-        {%- if section.settings.subheading != blank -%}<p class="subheading">{{ section.settings.subheading | escape }}</p>{%- endif -%}
-        <h2 class="h2">{% render 'styled-text', content: section.settings.title, gradient: section.settings.heading_gradient %}</h2>
-        {{ section.settings.content }}
+  <div class="patronb2b-proc-shell">
+    {%- if section.settings.subheading != blank -%}
+      <div class="patronb2b-proc-eyebrow">{{ section.settings.subheading | escape }}</div>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="patronb2b-proc-title">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+    <div class="patronb2b-proc-grid">
+      <div class="patronb2b-proc-media">
+        {%- if section.settings.video != blank -%}
+          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
+        {%- elsif section.settings.image != blank -%}
+          {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(max-width: 999px) 100vw, 40vw', widths: '500,800,1200' }}
+        {%- else -%}
+          <div class="patronb2b-proc-media__dashed"></div>
+          <div class="patronb2b-proc-media__placeholder">
+            <div class="patronb2b-proc-media__play">
+              <span aria-hidden="true" style="width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;border-left:18px solid #fff;display:block;margin-left:3px;"></span>
+            </div>
+            <div class="patronb2b-proc-media__label">{{ section.settings.media_label | default: 'Video: Der Prozess in 60 Sekunden' }}</div>
+          </div>
+        {%- endif -%}
       </div>
-
-      <div class="patron-process-list">
+      <div class="patronb2b-proc-steps">
         {%- for block in section.blocks -%}
-          <div class="patron-process-step" {{ block.shopify_attributes }}>
-            <span class="patron-process-number">{{ forloop.index }}</span>
+          <div class="patronb2b-proc-step" {{ block.shopify_attributes }}>
+            <div class="patronb2b-proc-step__num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</div>
             <div>
-              <h3 class="h5">{{ block.settings.title }}</h3>
-              <p>{{ block.settings.text }}</p>
+              <div class="patronb2b-proc-step__title">{{ block.settings.title }}</div>
+              <p class="patronb2b-proc-step__text">{{ block.settings.text }}</p>
             </div>
           </div>
         {%- endfor -%}
@@ -77,39 +112,41 @@
 
 {% schema %}
 {
-  "name": "Patron – Ablauf",
-  "class": "shopify-section--patron-process",
+  "name": "Patron B2B – Prozess",
+  "class": "shopify-section--patronb2b-process",
   "tag": "section",
   "settings": [
-    {"type":"checkbox","id":"full_width","label":"Full width","default":true},
-    {"type":"color","id":"background","label":"Background","default":"#ffffff"},
-    {"type":"color_background","id":"background_gradient","label":"Background gradient"},
-    {"type":"color","id":"text_color","label":"Text","default":"#121212"},
-    {"type":"text","id":"subheading","label":"Subheading","default":"Von der Idee bis zum Empfänger"},
-    {"type":"text","id":"title","label":"Heading","default":"Ein Prozess. Ein Ansprechpartner."},
-    {"type":"richtext","id":"content","label":"Content","default":"<p>Design, Produktion, Geschenkset, Konfektionierung und Versand aus einer Hand.</p>"},
-    {"type":"video","id":"video","label":"Shopify video"},
-    {"type":"image_picker","id":"image","label":"Fallback image"},
-    {"type":"color_background","id":"heading_gradient","label":"Heading gradient"}
+    {"type": "checkbox", "id": "full_width", "label": "Full width", "default": true},
+    {"type": "color", "id": "background", "label": "Background", "default": "#42195A"},
+    {"type": "color", "id": "text_color", "label": "Text color", "default": "#FFFFFF"},
+    {"type": "color", "id": "accent_color", "label": "Accent color", "default": "#6DD972"},
+    {"type": "text", "id": "subheading", "label": "Eyebrow", "default": "Von der Idee bis zum Empfänger"},
+    {"type": "text", "id": "title", "label": "Heading", "default": "Ein Prozess. Ein Ansprechpartner."},
+    {"type": "header", "content": "Media"},
+    {"type": "video", "id": "video", "label": "Video"},
+    {"type": "image_picker", "id": "image", "label": "Fallback image"},
+    {"type": "text", "id": "media_label", "label": "Placeholder label", "default": "Video: Der Prozess in 60 Sekunden"}
   ],
   "blocks": [
     {
-      "type":"step","name":"Step","limit":7,
-      "settings":[
-        {"type":"text","id":"title","label":"Title","default":"Logo & Anlass"},
-        {"type":"textarea","id":"text","label":"Text","default":"Ihr sendet Logo, Stückzahl und Einsatzzweck."}
+      "type": "step",
+      "name": "Step",
+      "limit": 8,
+      "settings": [
+        {"type": "text", "id": "title", "label": "Title", "default": "Logo & Anlass"},
+        {"type": "textarea", "id": "text", "label": "Text", "default": "Ihr sendet Logo, Stückzahl und Einsatzzweck."}
       ]
     }
   ],
-  "presets":[
+  "presets": [
     {
-      "name":"Patron – Ablauf",
-      "blocks":[
-        {"type":"step","settings":{"title":"Logo & Anlass","text":"Ihr sendet Logo, Stückzahl und Einsatzzweck."}},
-        {"type":"step","settings":{"title":"Kostenloser Designvorschlag","text":"Wir übersetzen eure Marke in ein sockentaugliches Design."}},
-        {"type":"step","settings":{"title":"Produktion & Verpackung","text":"Socken, Banderolen, Boxen und Beigaben werden umgesetzt."}},
-        {"type":"step","settings":{"title":"Konfektionierung","text":"Flyer, Gutscheine, Anschreiben und Werbemittel werden beigelegt."}},
-        {"type":"step","settings":{"title":"Direktversand","text":"Einzelversand oder Sammellieferung zum Wunschtermin."}}
+      "name": "Patron B2B – Prozess",
+      "blocks": [
+        {"type": "step", "settings": {"title": "Logo & Anlass", "text": "Ihr sendet Logo, Stückzahl und Einsatzzweck."}},
+        {"type": "step", "settings": {"title": "Kostenloser Designvorschlag", "text": "Wir übersetzen eure Marke in ein sockentaugliches Design – in 24 Stunden."}},
+        {"type": "step", "settings": {"title": "Produktion & Verpackung", "text": "Socken, Banderolen, Boxen und Beigaben werden umgesetzt."}},
+        {"type": "step", "settings": {"title": "Konfektionierung", "text": "Flyer, Gutscheine, Anschreiben und Werbemittel werden beigelegt."}},
+        {"type": "step", "settings": {"title": "Direktversand", "text": "Einzelversand oder Sammellieferung zum Wunschtermin."}}
       ]
     }
   ]

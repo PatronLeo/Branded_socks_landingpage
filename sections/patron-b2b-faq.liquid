@@ -1,36 +1,84 @@
 {%- render 'section-spacing-collapsing' -%}
 
+<style>
+  #shopify-section-{{ section.id }} .patronb2b-faq-shell{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-faq-eyebrow{
+    font-size: 14px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+    color: {{ section.settings.accent_color }};
+    margin-bottom: 8px;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-faq-title{
+    font-size: 30px; font-weight: 800; margin: 0 0 32px;
+    color: {{ section.settings.text_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-faq-list details{
+    background: {{ section.settings.item_background }};
+    border-bottom: 1px solid {{ section.settings.divider_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-faq-list summary{
+    list-style: none;
+    padding: 20px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    cursor: pointer;
+    font-size: 16px; font-weight: 700;
+    color: {{ section.settings.text_color }};
+  }
+  #shopify-section-{{ section.id }} .patronb2b-faq-list summary::-webkit-details-marker{ display: none; }
+  #shopify-section-{{ section.id }} .patronb2b-faq-list summary::after{
+    content: '+';
+    font-size: 22px; font-weight: 700;
+    color: {{ section.settings.accent_color }};
+    margin-left: 16px;
+    transition: transform .2s ease;
+  }
+  #shopify-section-{{ section.id }} .patronb2b-faq-list details[open] summary::after{
+    content: '–';
+  }
+  #shopify-section-{{ section.id }} .patronb2b-faq-list .patronb2b-faq-answer{
+    padding: 0 24px 20px;
+    font-size: 15px; line-height: 1.6;
+    color: {{ section.settings.text_color }}; opacity: .82;
+  }
+  @media screen and (max-width: 699px){
+    #shopify-section-{{ section.id }} .patronb2b-faq-title{ font-size: 24px; }
+    #shopify-section-{{ section.id }} .patronb2b-faq-shell{ padding: 56px 20px; }
+  }
+</style>
+
 <div {% render 'section-properties' %}>
-  <div class="section-stack section-stack--horizontal">
-    <div class="section-stack__intro">
-      <div class="prose">
-        {%- if section.settings.subheading != blank -%}<p class="subheading">{{ section.settings.subheading }}</p>{%- endif -%}
-        <h2 class="h2">{% render 'styled-text', content: section.settings.title, gradient: section.settings.heading_gradient %}</h2>
-        {{ section.settings.content }}
-      </div>
-    </div>
-    <div class="section-stack__main">
-      <div {% render 'surface', class: 'accordion-box rounded', background: section.settings.accordion_background, text_color: section.settings.accordion_text_color, background_fallback: 'bg-secondary' %}>
-        {%- for block in section.blocks -%}
-          {%- capture answer -%}<div class="prose">{{ block.settings.answer }}</div>{%- endcapture -%}
-          {% render 'accordion', title: block.settings.question, content: answer, block: block %}
-        {%- endfor -%}
-      </div>
+  <div class="patronb2b-faq-shell">
+    {%- if section.settings.subheading != blank -%}
+      <div class="patronb2b-faq-eyebrow">{{ section.settings.subheading | escape }}</div>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="patronb2b-faq-title">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+    <div class="patronb2b-faq-list">
+      {%- for block in section.blocks -%}
+        <details {{ block.shopify_attributes }}>
+          <summary>{{ block.settings.question }}</summary>
+          <div class="patronb2b-faq-answer">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
     </div>
   </div>
 </div>
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {%- for block in section.blocks -%}
-    {
-      "@type":"Question",
-      "name":{{ block.settings.question | json }},
-      "acceptedAnswer":{"@type":"Answer","text":{{ block.settings.answer | strip_html | json }}}
-    }{% unless forloop.last %},{% endunless %}
+      {
+        "@type": "Question",
+        "name": {{ block.settings.question | json }},
+        "acceptedAnswer": { "@type": "Answer", "text": {{ block.settings.answer | strip_html | strip_newlines | json }} }
+      }{% unless forloop.last %},{% endunless %}
     {%- endfor -%}
   ]
 }
@@ -38,38 +86,39 @@
 
 {% schema %}
 {
-  "name":"Patron – FAQ",
-  "class":"shopify-section--patron-faq",
-  "tag":"section",
-  "settings":[
-    {"type":"checkbox","id":"full_width","label":"Full width","default":true},
-    {"type":"color","id":"background","label":"Background","default":"#f2eee7"},
-    {"type":"color","id":"text_color","label":"Text","default":"#121212"},
-    {"type":"text","id":"subheading","label":"Subheading","default":"FAQ"},
-    {"type":"text","id":"title","label":"Heading","default":"Häufige Fragen vor dem ersten Projekt"},
-    {"type":"richtext","id":"content","label":"Content","default":"<p>Die wichtigsten Antworten zu Gestaltung, Produktion, Geschenksets und Versand.</p>"},
-    {"type":"color","id":"accordion_background","label":"Accordion background","default":"#ffffff"},
-    {"type":"color","id":"accordion_text_color","label":"Accordion text","default":"#121212"},
-    {"type":"color_background","id":"heading_gradient","label":"Heading gradient"}
+  "name": "Patron B2B – FAQ",
+  "class": "shopify-section--patronb2b-faq",
+  "tag": "section",
+  "settings": [
+    {"type": "checkbox", "id": "full_width", "label": "Full width", "default": true},
+    {"type": "color", "id": "background", "label": "Background", "default": "#F2F1F1"},
+    {"type": "color", "id": "text_color", "label": "Text color", "default": "#1A1A1A"},
+    {"type": "color", "id": "accent_color", "label": "Accent color", "default": "#632B99"},
+    {"type": "color", "id": "item_background", "label": "Item background", "default": "#FFFFFF"},
+    {"type": "color", "id": "divider_color", "label": "Divider color", "default": "#ECECEC"},
+    {"type": "text", "id": "subheading", "label": "Eyebrow", "default": "FAQ"},
+    {"type": "text", "id": "title", "label": "Heading", "default": "Häufige Fragen vor dem ersten Projekt"}
   ],
-  "blocks":[
+  "blocks": [
     {
-      "type":"item","name":"FAQ item","limit":10,
-      "settings":[
-        {"type":"text","id":"question","label":"Question","default":"Ab welcher Stückzahl können individuelle Socken produziert werden?"},
-        {"type":"richtext","id":"answer","label":"Answer","default":"<p>Tragt hier eure tatsächliche Mindestbestellmenge und mögliche Staffelungen ein.</p>"}
+      "type": "item",
+      "name": "FAQ item",
+      "limit": 12,
+      "settings": [
+        {"type": "text", "id": "question", "label": "Question", "default": "Ab welcher Stückzahl können individuelle Socken produziert werden?"},
+        {"type": "richtext", "id": "answer", "label": "Answer", "default": "<p>Ab 100 Paar pro Design und Größenbereich. Größere Mengen sind jederzeit möglich.</p>"}
       ]
     }
   ],
-  "presets":[
+  "presets": [
     {
-      "name":"Patron – FAQ",
-      "blocks":[
-        {"type":"item","settings":{"question":"Ab welcher Stückzahl können individuelle Socken produziert werden?","answer":"<p>Tragt hier eure tatsächliche Mindestbestellmenge und mögliche Staffelungen ein.</p>"}},
-        {"type":"item","settings":{"question":"Wie lange dauern Design, Produktion und Versand?","answer":"<p>Die Projektlaufzeit hängt von Menge, Modell, Verpackung und Versandart ab. Nach der Anfrage erhaltet ihr einen realistischen Zeitplan.</p>"}},
-        {"type":"item","settings":{"question":"Können Geschenksets individuell zusammengestellt werden?","answer":"<p>Ja. Neben Socken können beispielsweise Flyer, Gutscheine, Anschreiben, Karten und weitere Werbemittel konfektioniert werden.</p>"}},
-        {"type":"item","settings":{"question":"Ist ein Einzelversand an verschiedene Adressen möglich?","answer":"<p>Ja. Je nach Projekt ist der Versand direkt an Mitarbeiter, Kunden oder Geschäftspartner möglich.</p>"}},
-        {"type":"item","settings":{"question":"Erhalten wir vorab einen Designvorschlag?","answer":"<p>Ja. Nach Eingang der wichtigsten Angaben erstellen wir einen ersten unverbindlichen Designvorschlag.</p>"}}
+      "name": "Patron B2B – FAQ",
+      "blocks": [
+        {"type": "item", "settings": {"question": "Ab welcher Stückzahl können individuelle Socken produziert werden?", "answer": "<p>Ab 100 Paar pro Design und Größenbereich. Größere Mengen sind jederzeit möglich.</p>"}},
+        {"type": "item", "settings": {"question": "Wie lange dauern Design, Produktion und Versand?", "answer": "<p>Der kostenlose Designvorschlag steht innerhalb von 24 Stunden. Die Produktion dauert rund 6 Wochen, abhängig von Menge, Modell, Verpackung und Versandart.</p>"}},
+        {"type": "item", "settings": {"question": "Können Geschenksets individuell zusammengestellt werden?", "answer": "<p>Ja. Neben Socken können beispielsweise Flyer, Gutscheine, Anschreiben, Karten und weitere Werbemittel konfektioniert werden.</p>"}},
+        {"type": "item", "settings": {"question": "Ist ein Einzelversand an verschiedene Adressen möglich?", "answer": "<p>Ja. Je nach Projekt ist der Versand direkt an Mitarbeiter, Kunden oder Geschäftspartner möglich.</p>"}},
+        {"type": "item", "settings": {"question": "Gibt es nachhaltige Materialien?", "answer": "<p>Ja, GOTS-zertifizierte Bio-Baumwolle ist auf Wunsch optional erhältlich.</p>"}}
       ]
     }
   ]

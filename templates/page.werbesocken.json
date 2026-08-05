@@ -1,429 +1,280 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
       "type": "patron-b2b-hero",
+      "blocks": {
+        "t1": {"type": "trust", "settings": {"text": "Designservice"}},
+        "t2": {"type": "trust", "settings": {"text": "Geschenksets"}},
+        "t3": {"type": "trust", "settings": {"text": "Einzelversand"}},
+        "t4": {"type": "trust", "settings": {"text": "Persönliche Begleitung"}}
+      },
+      "block_order": ["t1", "t2", "t3", "t4"],
       "settings": {
         "full_width": true,
-        "background": "#f2eee7",
-        "background_gradient": "",
-        "text_color": "#121212",
+        "background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99",
+        "media_bg": "#42195A",
         "subheading": "Corporate Gifts & Socks",
-        "title": "Mehr als nur individuelle Socken",
+        "title": "Mehr als nur individuelle Socken.",
         "content": "<p>Wir entwickeln komplette Geschenk- und Versandlösungen für Unternehmen, Vereine und Künstler – von der ersten Idee bis zum Versand an Kunden, Teams oder Fans.</p>",
-        "media_caption": "Von der Idee bis zum besonderen Moment.",
-        "whatsapp_number": "0162 7390598",
-        "whatsapp_message": "Hallo Patron Socks, wir möchten einen kostenlosen ersten Designvorschlag erhalten.",
-        "whatsapp_label": "Logo per WhatsApp senden",
-        "button_background": "#25d366",
-        "button_text_color": "#121212",
-        "secondary_label": "Kostenlosen Entwurf erhalten",
-        "secondary_link": "#patron-b2b-contact",
-        "heading_gradient": ""
+        "whatsapp_label": "Anfragen per WhatsApp",
+        "whatsapp_number": "491627390598",
+        "whatsapp_message": "Hallo Patron Socks, wir interessieren uns für individuelle Werbesocken und möchten einen kostenlosen ersten Designvorschlag erhalten.",
+        "primary_btn_bg": "#6DD972",
+        "primary_btn_text": "#1A1A1A",
+        "mail_label": "Anfragen per Mail",
+        "contact_email": "hello@patronsocks.de",
+        "mail_subject": "Werbesocken Anfrage",
+        "media_placeholder_label": "Video folgt in Kürze",
+        "media_placeholder_note": "Platzhalter – hier steht bald ein Video von der Idee bis zum fertigen Versand."
+      }
+    },
+    "stats_icons": {
+      "type": "patron-b2b-stats",
+      "blocks": {
+        "s1": {"type": "stat", "settings": {"title": "Ab 100 Paar", "text": "Mindestbestellmenge, Großmengen möglich", "icon": "package"}},
+        "s2": {"type": "stat", "settings": {"title": "6 Wochen", "text": "Produktionszeit", "icon": "clock"}},
+        "s3": {"type": "stat", "settings": {"title": "24 Std.", "text": "Kostenfreier erster Designvorschlag", "icon": "star"}},
+        "s4": {"type": "stat", "settings": {"title": "GOTS Bio", "text": "Zertifizierte Baumwolle, optional", "icon": "leaf"}}
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "full_width": true,
+        "background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99",
+        "icon_bg": "#F0E8F7",
+        "display_style": "icons"
       }
     },
     "references": {
       "type": "patron-b2b-references",
       "blocks": {
-        "reference_TJPfUU": {
-          "type": "reference",
-          "settings": {
-            "name": "MediaMarkt",
-            "category": "Kundenaktionen"
-          }
-        },
-        "r1": {
-          "type": "reference",
-          "settings": {
-            "name": "MediaMarkt",
-            "category": "Kundenaktionen · Weihnachten · WM"
-          }
-        },
-        "r2": {
-          "type": "reference",
-          "settings": {
-            "name": "Mo-Torres",
-            "category": "Merchandise"
-          }
-        },
-        "r3": {
-          "type": "reference",
-          "settings": {
-            "name": "Querbeat",
-            "category": "Band-Merchandise"
-          }
-        },
-        "r4": {
-          "type": "reference",
-          "settings": {
-            "name": "Fortuna Köln",
-            "category": "Vereinssocken"
-          }
-        },
-        "r5": {
-          "type": "reference",
-          "settings": {
-            "name": "Kölner Haie",
-            "category": "Vereinssocken"
-          }
-        }
+        "r1": {"type": "reference", "settings": {"name": "MediaMarkt"}},
+        "r2": {"type": "reference", "settings": {"name": "Mo-Torres"}},
+        "r3": {"type": "reference", "settings": {"name": "Querbeat"}},
+        "r4": {"type": "reference", "settings": {"name": "Fortuna Köln"}},
+        "r5": {"type": "reference", "settings": {"name": "Kölner Haie"}}
       },
-      "block_order": [
-        "reference_TJPfUU",
-        "r1",
-        "r2",
-        "r3",
-        "r4",
-        "r5"
-      ],
+      "block_order": ["r1", "r2", "r3", "r4", "r5"],
       "settings": {
         "full_width": true,
-        "background": "#ffffff",
-        "text_color": "#121212",
-        "subheading": "Referenzen",
-        "title": "Bereits umgesetzt für starke Marken.",
-        "content": "<p>Echte Projekte schaffen sofort Vertrauen – direkt nach dem Hero.</p>"
+        "background": "#42195A",
+        "text_color": "#FFFFFF",
+        "label": "Bereits umgesetzt für starke Marken",
+        "speed": 28,
+        "logo_filter": "brightness(0) invert(1)"
       }
     },
     "services": {
       "type": "patron-b2b-services",
       "blocks": {
-        "s1": {
-          "type": "service",
-          "settings": {
-            "title": "Individuelle Firmensocken",
-            "text": "Logo, Farben und Design passend zur Marke."
-          }
-        },
-        "s2": {
-          "type": "service",
-          "settings": {
-            "title": "Mitarbeiter- & Kundengeschenke",
-            "text": "Für Onboarding, Jubiläum, Weihnachten oder Dankeschön-Aktionen."
-          }
-        },
-        "s3": {
-          "type": "service",
-          "settings": {
-            "title": "Messe- & Eventartikel",
-            "text": "Hochwertige Give-aways, Promotion- und Aktionsprodukte."
-          }
-        },
-        "s4": {
-          "type": "service",
-          "settings": {
-            "title": "Vereins- & Teamsocken",
-            "text": "Für Mannschaft, Mitglieder, Fanshop und Sponsoren."
-          }
-        },
-        "s5": {
-          "type": "service",
-          "settings": {
-            "title": "Geschenksets",
-            "text": "Mit Karten, Gutscheinen, Flyern und Werbemitteln."
-          }
-        },
-        "s6": {
-          "type": "service",
-          "settings": {
-            "title": "Konfektionierung & Versand",
-            "text": "Fertig zusammengestellt und direkt an einzelne Empfänger."
-          }
-        }
+        "sv1": {"type": "service", "settings": {"title": "Individuelle Socken mit Firmenlogo", "icon": "tag"}},
+        "sv2": {"type": "service", "settings": {"title": "Mitarbeitergeschenke", "icon": "gift"}},
+        "sv3": {"type": "service", "settings": {"title": "Weihnachtsgeschenke", "icon": "star"}},
+        "sv4": {"type": "service", "settings": {"title": "Kundengeschenke", "icon": "heart"}},
+        "sv5": {"type": "service", "settings": {"title": "Messe- und Eventartikel", "icon": "plane"}},
+        "sv6": {"type": "service", "settings": {"title": "Vereins- und Teamsocken", "icon": "team"}},
+        "sv7": {"type": "service", "settings": {"title": "Geschenksets", "icon": "package"}},
+        "sv8": {"type": "service", "settings": {"title": "Individuelle Produktbeigaben (Flyer, Gutscheine, Anschreiben)", "icon": "flyer"}}
       },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4",
-        "s5",
-        "s6"
-      ],
+      "block_order": ["sv1", "sv2", "sv3", "sv4", "sv5", "sv6", "sv7", "sv8"],
       "settings": {
         "full_width": true,
-        "background": "#f2eee7",
-        "text_color": "#121212",
+        "background": "#F2F1F1",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99",
+        "tile_background": "#FFFFFF",
+        "divider_color": "#ECECEC",
         "subheading": "Das komplette Leistungspaket",
         "title": "Eine Socke ist nur der Anfang.",
-        "content": "<p>Patron Socks begleitet B2B-Projekte von der Gestaltung bis zur Übergabe an einzelne Empfänger.</p>"
+        "content": "<p>Patron Socks begleitet euer Projekt von der Gestaltung bis zur Übergabe an einzelne Empfänger – keine Socken, sondern eine komplette Geschenk- und Versandlösung.</p>"
+      }
+    },
+    "benefits": {
+      "type": "patron-b2b-benefits",
+      "blocks": {
+        "b1": {"type": "benefit", "settings": {"title": "Täglich getragen, täglich sichtbar", "text": "Socken bleiben im Kleiderschrank – und am Fuß eurer Zielgruppe."}},
+        "b2": {"type": "benefit", "settings": {"title": "Hohe Qualität, positive Markenassoziation", "text": "Gute Socken zahlen direkt auf euer Markenerlebnis ein."}},
+        "b3": {"type": "benefit", "settings": {"title": "Praktisches Geschenk mit echter Wertschätzung", "text": "Kein Wegwerf-Give-away, sondern etwas, das genutzt wird."}},
+        "b4": {"type": "benefit", "settings": {"title": "Nachhaltige Materialien optional", "text": "GOTS-zertifizierte Bio-Baumwolle stärkt euer Image."}}
+      },
+      "block_order": ["b1", "b2", "b3", "b4"],
+      "settings": {
+        "full_width": true,
+        "background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99",
+        "subheading": "Warum Socken als Merch?",
+        "title": "Ein Werbemittel, das wirklich getragen wird.",
+        "quote": "Bleiben im Kopf – und am Fuß."
       }
     },
     "process": {
       "type": "patron-b2b-process",
       "blocks": {
-        "p1": {
-          "type": "step",
-          "settings": {
-            "title": "Logo & Anlass",
-            "text": "Ihr sendet Logo, Stückzahl und Einsatzzweck."
-          }
-        },
-        "p2": {
-          "type": "step",
-          "settings": {
-            "title": "Kostenloser Designvorschlag",
-            "text": "Wir übersetzen eure Marke in ein sockentaugliches Design."
-          }
-        },
-        "p3": {
-          "type": "step",
-          "settings": {
-            "title": "Produktion & Verpackung",
-            "text": "Socken, Banderolen, Boxen und Beigaben werden umgesetzt."
-          }
-        },
-        "p4": {
-          "type": "step",
-          "settings": {
-            "title": "Konfektionierung",
-            "text": "Flyer, Gutscheine, Anschreiben und Werbemittel werden beigelegt."
-          }
-        },
-        "p5": {
-          "type": "step",
-          "settings": {
-            "title": "Direktversand",
-            "text": "Einzelversand oder Sammellieferung zum Wunschtermin."
-          }
-        }
+        "p1": {"type": "step", "settings": {"title": "Logo & Anlass", "text": "Ihr sendet Logo, Stückzahl und Einsatzzweck."}},
+        "p2": {"type": "step", "settings": {"title": "Kostenloser Designvorschlag", "text": "Wir übersetzen eure Marke in ein sockentaugliches Design – in 24 Stunden."}},
+        "p3": {"type": "step", "settings": {"title": "Produktion & Verpackung", "text": "Socken, Banderolen, Boxen und Beigaben werden umgesetzt."}},
+        "p4": {"type": "step", "settings": {"title": "Konfektionierung", "text": "Flyer, Gutscheine, Anschreiben und Werbemittel werden beigelegt."}},
+        "p5": {"type": "step", "settings": {"title": "Direktversand", "text": "Einzelversand oder Sammellieferung zum Wunschtermin."}}
       },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4",
-        "p5"
-      ],
+      "block_order": ["p1", "p2", "p3", "p4", "p5"],
       "settings": {
         "full_width": true,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#121212",
+        "background": "#42195A",
+        "text_color": "#FFFFFF",
+        "accent_color": "#6DD972",
         "subheading": "Von der Idee bis zum Empfänger",
         "title": "Ein Prozess. Ein Ansprechpartner.",
-        "content": "<p>Design, Produktion, Geschenkset, Konfektionierung und Versand aus einer Hand.</p>",
-        "heading_gradient": ""
+        "media_label": "Video: Der Prozess in 60 Sekunden"
       }
     },
     "projects": {
       "type": "patron-b2b-projects",
       "blocks": {
-        "c1": {
-          "type": "case",
-          "settings": {
-            "title": "Mo-Torres",
-            "text": "Merchandise-Socken für Fans und den Verkauf."
-          }
-        },
-        "c2": {
-          "type": "case",
-          "settings": {
-            "title": "Querbeat / Positiv Radikal",
-            "text": "Individuelle Merchandise-Socken für die Band Querbeat."
-          }
-        },
-        "c3": {
-          "type": "case",
-          "settings": {
-            "title": "Fortuna Köln",
-            "text": "Vereinssocken für Fans, Mitglieder und den Fanshop."
-          }
-        },
-        "c4": {
-          "type": "case",
-          "settings": {
-            "title": "Kölner Haie",
-            "text": "Vereins- und Merchandise-Socken für den Eishockeyclub."
-          }
-        }
+        "c1": {"type": "case", "settings": {"tag": "Mitarbeitergeschenk"}},
+        "c2": {"type": "case", "settings": {"tag": "Weihnachtsaktion"}},
+        "c3": {"type": "case", "settings": {"tag": "Vereinssocken"}},
+        "c4": {"type": "case", "settings": {"tag": "Messe / Event"}},
+        "c5": {"type": "case", "settings": {"tag": "Merchandise"}},
+        "c6": {"type": "case", "settings": {"tag": "Geschenkset"}}
       },
-      "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4"
-      ],
+      "block_order": ["c1", "c2", "c3", "c4", "c5", "c6"],
       "settings": {
         "full_width": true,
-        "background": "#121212",
-        "text_color": "#ffffff",
-        "subheading": "Projekte nach Einsatzzweck",
-        "title": "Referenzen, die sofort Orientierung geben.",
-        "content": "<p>Unternehmen, Künstler und Vereine sehen direkt einen passenden Anwendungsfall.</p>",
-        "feature_category": "Kunden- & Weihnachtsaktion",
-        "feature_title": "MediaMarkt",
-        "feature_text": "<p>Individuelle Weihnachtssocken als Aktionsbeigabe zu MediaMarkt-Gutscheinen. Zusätzlich wurden für eine Fußball-WM passende Aktionssocken umgesetzt.</p>"
+        "background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99",
+        "placeholder_bg": "#F2F1F1",
+        "star_color": "#6DD972",
+        "subheading": "Realisierte Projekte",
+        "title": "Socken Liebe.",
+        "speed": 32,
+        "rating_text": "Ausgezeichnet bewertet von Unternehmen, Vereinen und Künstlern"
       }
     },
     "giftsets": {
       "type": "patron-b2b-giftsets",
+      "blocks": {
+        "g1": {"type": "item", "settings": {"title": "Individuelle Socken"}},
+        "g2": {"type": "item", "settings": {"title": "Grußkarte / Anschreiben"}},
+        "g3": {"type": "item", "settings": {"title": "Gutschein / Flyer"}},
+        "g4": {"type": "item", "settings": {"title": "Weitere Werbemittel"}},
+        "g5": {"type": "item", "settings": {"title": "Verpackung & Versand"}}
+      },
+      "block_order": ["g1", "g2", "g3", "g4", "g5"],
       "settings": {
         "full_width": true,
-        "background": "#f2eee7",
-        "text_color": "#121212",
+        "background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99",
+        "tile_background": "#FFFFFF",
+        "divider_color": "#ECECEC",
         "subheading": "Geschenksets & Konfektionierung",
         "title": "Aus einem Produkt wird ein komplettes Geschenk.",
         "content": "<p>Wir kombinieren individuelle Socken mit ausgewählten Beigaben, verpacken jedes Set und bereiten es für den Versand vor.</p>",
         "button_label": "Geschenkset anfragen",
         "link": "#patron-b2b-contact",
-        "button_background": "#121212",
-        "button_text_color": "#ffffff"
+        "button_background": "#632B99",
+        "button_text_color": "#FFFFFF"
       }
     },
     "shipping": {
       "type": "patron-b2b-shipping",
       "blocks": {
-        "b1": {
-          "type": "benefit",
-          "settings": {
-            "title": "Komplette Konfektionierung",
-            "text": "Jedes Set wird nach euren Vorgaben zusammengestellt."
-          }
-        },
-        "b2": {
-          "type": "benefit",
-          "settings": {
-            "title": "Einzelversand",
-            "text": "Direkt an Mitarbeiter, Kunden oder Geschäftspartner."
-          }
-        },
-        "b3": {
-          "type": "benefit",
-          "settings": {
-            "title": "Versand zum Wunschtermin",
-            "text": "Für Weihnachten, Kampagnenstart, Messe oder Jubiläum."
-          }
-        },
-        "b4": {
-          "type": "benefit",
-          "settings": {
-            "title": "Persönliche Projektbegleitung",
-            "text": "Ein Ansprechpartner koordiniert Gestaltung, Produktion und Versand."
-          }
-        }
+        "n1": {"type": "benefit", "settings": {"title": "Ab 100 Paar", "text": "Mindestbestellmenge, Großmengen möglich"}},
+        "n2": {"type": "benefit", "settings": {"title": "6 Wochen", "text": "Produktionszeit"}},
+        "n3": {"type": "benefit", "settings": {"title": "24 Std.", "text": "Kostenfreier erster Designvorschlag"}},
+        "n4": {"type": "benefit", "settings": {"title": "GOTS Bio", "text": "Zertifizierte Baumwolle, optional"}}
       },
-      "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ],
+      "block_order": ["n1", "n2", "n3", "n4"],
       "settings": {
         "full_width": true,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#121212",
-        "subheading": "Versandlösung",
-        "title": "Wir übernehmen den Weg bis zur Haustür.",
-        "content": "<p>Sammellieferung oder Einzelversand – exakt passend zu eurem Projekt.</p>",
-        "heading_gradient": ""
+        "background": "#F2F1F1",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99"
       }
     },
     "contact": {
       "type": "patron-b2b-contact",
       "settings": {
         "full_width": true,
-        "background": "#ffffff",
-        "text_color": "#121212",
+        "background": "#FFFFFF",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99",
+        "tile_background": "#FFFFFF",
+        "divider_color": "#ECECEC",
         "subheading": "Niedrigschwellige Anfrage",
         "title": "Logo hochladen und kostenlos einen ersten Designvorschlag erhalten.",
-        "content": "<p>Unternehmensname, Ansprechpartner, Stückzahl und Einsatzzweck reichen für den ersten Kontakt.</p>",
-        "form_background": "#f2eee7",
-        "form_text_color": "#121212",
+        "content": "<p>Unternehmensname, Ansprechpartner, Stückzahl und Einsatzzweck reichen für den ersten Kontakt. Innerhalb von 24 Stunden meldet sich unser Team mit einem Designvorschlag.</p>",
+        "card_title": "Lieber direkt schreiben?",
+        "note": "Euer Logo lässt sich direkt in Google Drive oder WeTransfer teilen. Den Link könnt ihr im Kommentarfeld ergänzen oder per WhatsApp senden.",
+        "contact_email": "hello@patronsocks.de",
+        "mail_subject": "Werbesocken Anfrage",
+        "whatsapp_number": "491627390598",
+        "whatsapp_message": "Hallo Patron Socks, wir interessieren uns für individuelle Werbesocken und möchten einen kostenlosen ersten Designvorschlag erhalten.",
+        "whatsapp_label": "Anfragen per WhatsApp",
+        "mail_label": "Anfragen per Mail",
+        "form_background": "#F2F1F1",
+        "form_text_color": "#1A1A1A",
+        "input_background": "#FFFFFF",
+        "input_border": "#CCCCCC",
         "button_label": "Kostenlosen Designvorschlag erhalten",
-        "button_background": "#25d366",
-        "button_text_color": "#121212"
+        "primary_btn_bg": "#6DD972",
+        "primary_btn_text": "#1A1A1A",
+        "success_message": "Danke! Wir melden uns persönlich bei euch."
       }
     },
     "faq": {
       "type": "patron-b2b-faq",
       "blocks": {
-        "f1": {
-          "type": "item",
-          "settings": {
-            "question": "Ab welcher Stückzahl können individuelle Socken produziert werden?",
-            "answer": "<p>Tragt hier eure tatsächliche Mindestbestellmenge und mögliche Staffelungen ein.</p>"
-          }
-        },
-        "f2": {
-          "type": "item",
-          "settings": {
-            "question": "Wie lange dauern Design, Produktion und Versand?",
-            "answer": "<p>Die Projektlaufzeit hängt von Menge, Modell, Verpackung und Versandart ab. Nach der Anfrage erhaltet ihr einen realistischen Zeitplan.</p>"
-          }
-        },
-        "f3": {
-          "type": "item",
-          "settings": {
-            "question": "Können Geschenksets individuell zusammengestellt werden?",
-            "answer": "<p>Ja. Neben Socken können beispielsweise Flyer, Gutscheine, Anschreiben, Karten und weitere Werbemittel konfektioniert werden.</p>"
-          }
-        },
-        "f4": {
-          "type": "item",
-          "settings": {
-            "question": "Ist ein Einzelversand an verschiedene Adressen möglich?",
-            "answer": "<p>Ja. Je nach Projekt ist der Versand direkt an Mitarbeiter, Kunden oder Geschäftspartner möglich.</p>"
-          }
-        },
-        "f5": {
-          "type": "item",
-          "settings": {
-            "question": "Erhalten wir vorab einen Designvorschlag?",
-            "answer": "<p>Ja. Nach Eingang der wichtigsten Angaben erstellen wir einen ersten unverbindlichen Designvorschlag.</p>"
-          }
-        }
+        "f1": {"type": "item", "settings": {"question": "Ab welcher Stückzahl können individuelle Socken produziert werden?", "answer": "<p>Ab 100 Paar pro Design und Größenbereich. Größere Mengen sind jederzeit möglich.</p>"}},
+        "f2": {"type": "item", "settings": {"question": "Wie lange dauern Design, Produktion und Versand?", "answer": "<p>Der kostenlose Designvorschlag steht innerhalb von 24 Stunden. Die Produktion dauert rund 6 Wochen, abhängig von Menge, Modell, Verpackung und Versandart.</p>"}},
+        "f3": {"type": "item", "settings": {"question": "Können Geschenksets individuell zusammengestellt werden?", "answer": "<p>Ja. Neben Socken können beispielsweise Flyer, Gutscheine, Anschreiben, Karten und weitere Werbemittel konfektioniert werden.</p>"}},
+        "f4": {"type": "item", "settings": {"question": "Ist ein Einzelversand an verschiedene Adressen möglich?", "answer": "<p>Ja. Je nach Projekt ist der Versand direkt an Mitarbeiter, Kunden oder Geschäftspartner möglich.</p>"}},
+        "f5": {"type": "item", "settings": {"question": "Gibt es nachhaltige Materialien?", "answer": "<p>Ja, GOTS-zertifizierte Bio-Baumwolle ist auf Wunsch optional erhältlich.</p>"}}
       },
-      "block_order": [
-        "f1",
-        "f2",
-        "f3",
-        "f4",
-        "f5"
-      ],
+      "block_order": ["f1", "f2", "f3", "f4", "f5"],
       "settings": {
         "full_width": true,
-        "background": "#f2eee7",
-        "text_color": "#121212",
+        "background": "#F2F1F1",
+        "text_color": "#1A1A1A",
+        "accent_color": "#632B99",
+        "item_background": "#FFFFFF",
+        "divider_color": "#ECECEC",
         "subheading": "FAQ",
-        "title": "Häufige Fragen vor dem ersten Projekt",
-        "content": "<p>Die wichtigsten Antworten zu Gestaltung, Produktion, Geschenksets und Versand.</p>",
-        "accordion_background": "#ffffff",
-        "accordion_text_color": "#121212",
-        "heading_gradient": ""
+        "title": "Häufige Fragen vor dem ersten Projekt"
       }
     },
     "final_cta": {
       "type": "patron-b2b-final-cta",
       "settings": {
         "full_width": true,
-        "background": "#25d366",
-        "text_color": "#121212",
+        "background": "#42195A",
+        "text_color": "#FFFFFF",
+        "accent_color": "#6DD972",
         "subheading": "Von der Idee bis zum Versand",
         "title": "Schickt uns euer Logo. Wir machen daraus ein komplettes Projekt.",
         "content": "<p>Design, Produktion, Verpackung, Konfektionierung und Versand aus einer Hand.</p>",
-        "whatsapp_number": "491234567890",
-        "whatsapp_message": "Hallo Patron Socks, wir interessieren uns für individuelle Socken und möchten einen kostenlosen ersten Designvorschlag erhalten.",
-        "whatsapp_label": "WhatsApp Anfrage starten",
-        "secondary_label": "Designvorschlag erhalten",
-        "primary_background": "#121212",
-        "primary_text": "#ffffff",
-        "heading_gradient": ""
+        "contact_email": "hello@patronsocks.de",
+        "mail_subject": "Werbesocken Anfrage",
+        "mail_label": "Anfragen per Mail",
+        "whatsapp_number": "491627390598",
+        "whatsapp_message": "Hallo Patron Socks, wir interessieren uns für individuelle Werbesocken und möchten einen kostenlosen ersten Designvorschlag erhalten.",
+        "whatsapp_label": "Anfragen per WhatsApp",
+        "primary_btn_bg": "#6DD972",
+        "primary_btn_text": "#1A1A1A"
       }
     }
   },
   "order": [
     "hero",
+    "stats_icons",
     "references",
     "services",
+    "benefits",
     "process",
     "projects",
     "giftsets",
