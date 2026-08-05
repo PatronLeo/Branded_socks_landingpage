@@ -1,1 +1,195 @@
-{"sections":{"image_with_text_overlay_wi9kfe":{"type":"image-with-text-overlay","blocks":{"richtext_QHdxKd":{"type":"richtext","disabled":true,"settings":{"content":"<p>Matching-Socken für Mama & Kind und Papa & Kind.<\/p>"}}},"block_order":["richtext_QHdxKd"],"name":"Image with text overlay","settings":{"full_width":true,"allow_transparent_header":false,"enable_parallax":false,"image_size":"sm","image":"shopify:\/\/shop_images\/Website_Header_Desktop_PACK_PATROON_SOCKS.jpg","mobile_image":"shopify:\/\/shop_images\/Website_Header_Mobile_PACK_PATRON_SOCKS.jpg","mobile_text_position":"place-self-start-center text-center","desktop_text_position":"sm:place-self-end-start sm:text-start","text_color":"#ffffff","overlay_color":"#ffffff","overlay_opacity":0}},"rich_text_rgBhEk":{"type":"rich-text","blocks":{"richtext_kpgFP4":{"type":"richtext","settings":{"content":"<p>Von euch gewünscht: Matching-Socken für Mama & Kind und Papa & Kind.<\/p>"}}},"block_order":["richtext_kpgFP4"],"name":"Rich text","settings":{"full_width":true,"content_width":"small","text_position":"center","background":"","background_gradient":"","text_color":""}},"banner":{"type":"collection-banner","disabled":true,"settings":{"full_width":true,"allow_transparent_header":false,"enable_parallax":true,"show_collection_title":true,"show_collection_description":true,"show_collection_image":true,"collection_title_size":"h1","image_size":"md","image":"shopify:\/\/shop_images\/Family_Packs-2.jpg","mobile_text_position":"place-self-center text-center","desktop_text_position":"sm:place-self-center sm:text-center","featured_product":"","featured_product_heading":"Matching Socken für Groß & Klein.","text_color":"#ffffff","overlay_color":"#000000","overlay_opacity":0}},"main":{"type":"main-collection","custom_css":[],"settings":{"products_per_page":50,"products_per_row_mobile":"2","products_per_row_desktop":4,"filter_layout":"drawer","show_sort_by":true,"show_filters":false,"show_filter_group_name":false,"show_filter_values_count":true,"open_first_filter_group":false}}},"order":["image_with_text_overlay_wi9kfe","rich_text_rgBhEk","banner","main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_wi9kfe": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_QHdxKd": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Matching-Socken für Mama & Kind und Papa & Kind.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_QHdxKd"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/Website_Header_Desktop_PACK_PATROON_SOCKS.jpg",
+        "mobile_image": "shopify://shop_images/Website_Header_Mobile_PACK_PATRON_SOCKS.jpg",
+        "mobile_text_position": "place-self-start-center text-center",
+        "desktop_text_position": "sm:place-self-end-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 0
+      }
+    },
+    "rich_text_rgBhEk": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_kpgFP4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Von euch gewünscht: Matching-Socken für Mama & Kind und Papa & Kind.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_kpgFP4"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h1",
+        "image_size": "md",
+        "image": "shopify://shop_images/Family_Packs-2.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Matching Socken für Groß & Klein.",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [],
+      "settings": {
+        "products_per_page": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "filter_layout": "drawer",
+        "show_sort_by": true,
+        "show_filters": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    },
+    "image_with_text_overlay_Uqjdqp": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_fiEBpx": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_6niqDT": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_NV9Pmm": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_fiEBpx",
+        "heading_6niqDT",
+        "richtext_NV9Pmm"
+      ],
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "multiple_images_with_text_hEW4rk": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_qTEy8T": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": -15,
+            "subheading": "",
+            "title": "Heading 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_TRHV3k": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_qTEy8T",
+        "item_TRHV3k"
+      ],
+      "disabled": true,
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "shifted",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_wi9kfe",
+    "rich_text_rgBhEk",
+    "banner",
+    "main",
+    "image_with_text_overlay_Uqjdqp",
+    "multiple_images_with_text_hEW4rk"
+  ]
+}
