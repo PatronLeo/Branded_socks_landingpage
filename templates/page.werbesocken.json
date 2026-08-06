@@ -123,6 +123,20 @@
     "references": {
       "type": "patron-b2b-references",
       "blocks": {
+        "reference_QccEWR": {
+          "type": "reference",
+          "settings": {
+            "name": "MediaMarkt",
+            "image": "shopify://shop_images/Logo_TSV-Handschuhsheim.png"
+          }
+        },
+        "reference_Enw9dT": {
+          "type": "reference",
+          "settings": {
+            "name": "MediaMarkt",
+            "image": "shopify://shop_images/Logo_BoD.png"
+          }
+        },
         "reference_U8qhKV": {
           "type": "reference",
           "settings": {
@@ -134,7 +148,7 @@
           "type": "reference",
           "settings": {
             "name": "MediaMarkt",
-            "image": "shopify://shop_images/download.png"
+            "image": "shopify://shop_images/Logo_Fortuna-Koeln.png"
           }
         },
         "r2": {
@@ -154,7 +168,8 @@
         "r4": {
           "type": "reference",
           "settings": {
-            "name": "Fortuna Köln"
+            "name": "Fortuna Köln",
+            "image": "shopify://shop_images/Logo_QUERBAT.png"
           }
         },
         "r5": {
@@ -166,6 +181,8 @@
         }
       },
       "block_order": [
+        "reference_QccEWR",
+        "reference_Enw9dT",
         "reference_U8qhKV",
         "reference_7mzLnp",
         "r2",
