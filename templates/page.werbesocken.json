@@ -347,7 +347,7 @@
         "accent_color": "#6dd972",
         "subheading": "Von der Idee bis zum Empfänger",
         "title": "Ein Prozess. Ein Ansprechpartner.",
-        "image": "shopify://shop_images/Leo_Petra_PATRON_SOCKS.jpg",
+        "image": "shopify://shop_images/P_L_301222_9_1.jpg",
         "media_label": "Video: Der Prozess in 60 Sekunden"
       }
     },
@@ -357,34 +357,39 @@
         "c1": {
           "type": "case",
           "settings": {
-            "title": "Mo-Torres",
-            "text": "Merchandise-Socken für Fans und Verkauf."
+            "image": "shopify://shop_images/Books_on_demand_Werbesocke.jpg",
+            "title": "BoD Books on Demand",
+            "text": "Werbesocken für Mitarbeiter und Kunden"
           }
         },
         "c2": {
           "type": "case",
           "settings": {
-            "title": "Mo-Torres",
+            "image": "shopify://shop_images/Cologne_Corcodiles_Socke.jpg",
+            "title": "Cologne Cocodiles",
             "text": "Merchandise-Socken für Fans und Verkauf."
           }
         },
         "c3": {
           "type": "case",
           "settings": {
-            "title": "Mo-Torres",
+            "image": "shopify://shop_images/QuerBeat_Werbesocke.jpg",
+            "title": "QuerBeat",
             "text": "Merchandise-Socken für Fans und Verkauf."
           }
         },
         "c4": {
           "type": "case",
           "settings": {
-            "title": "Mo-Torres",
+            "image": "shopify://shop_images/TSV_Rugby_Werbesocken.jpg",
+            "title": "TSV Handschuhsheim Rugby",
             "text": "Merchandise-Socken für Fans und Verkauf."
           }
         },
         "c5": {
           "type": "case",
           "settings": {
+            "image": "shopify://shop_images/MoTorres_Werbesocke3.jpg",
             "title": "Mo-Torres",
             "text": "Merchandise-Socken für Fans und Verkauf."
           }
@@ -392,7 +397,8 @@
         "c6": {
           "type": "case",
           "settings": {
-            "title": "Mo-Torres",
+            "image": "shopify://shop_images/KoelnerHaie_Werbesocke_3.jpg",
+            "title": "Kölner Haie",
             "text": "Merchandise-Socken für Fans und Verkauf."
           }
         }
