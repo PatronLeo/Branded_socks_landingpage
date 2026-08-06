@@ -60,7 +60,7 @@
         "mail_label": "Anfragen per Mail",
         "contact_email": "hello@patronsocks.de",
         "mail_subject": "Werbesocken Anfrage",
-        "video": "shopify://files/videos/Weiß Romantisch Natur Jahresrückblick Recap Smartphone Video (1920 x 1080 px) (1).mov",
+        "video": "shopify://files/videos/Sockenbild stärker hervorheben (1).mp4",
         "media_placeholder_label": "Video folgt in Kürze",
         "media_placeholder_note": "Platzhalter – hier steht bald ein Video von der Idee bis zum fertigen Versand."
       }
@@ -123,16 +123,32 @@
     "references": {
       "type": "patron-b2b-references",
       "blocks": {
+        "reference_U8qhKV": {
+          "type": "reference",
+          "settings": {
+            "name": "",
+            "image": "shopify://shop_images/Koelner_Haie.png"
+          }
+        },
+        "reference_7mzLnp": {
+          "type": "reference",
+          "settings": {
+            "name": "MediaMarkt",
+            "image": "shopify://shop_images/download.png"
+          }
+        },
         "r2": {
           "type": "reference",
           "settings": {
-            "name": "Mo-Torres"
+            "name": "Mo-Torres",
+            "image": "shopify://shop_images/Logo_Alte_Liebe.png"
           }
         },
         "r3": {
           "type": "reference",
           "settings": {
-            "name": "Querbeat"
+            "name": "Querbeat",
+            "image": "shopify://shop_images/Croco_freigestellt-wortmarke.png"
           }
         },
         "r4": {
@@ -150,6 +166,8 @@
         }
       },
       "block_order": [
+        "reference_U8qhKV",
+        "reference_7mzLnp",
         "r2",
         "r3",
         "r4",
@@ -347,7 +365,7 @@
         "accent_color": "#6dd972",
         "subheading": "Von der Idee bis zum Empfänger",
         "title": "Ein Prozess. Ein Ansprechpartner.",
-        "image": "shopify://shop_images/P_L_301222_9_1.jpg",
+        "image": "shopify://shop_images/Leo_Petra_PATRON_SOCKS.jpg",
         "media_label": "Video: Der Prozess in 60 Sekunden"
       }
     },
