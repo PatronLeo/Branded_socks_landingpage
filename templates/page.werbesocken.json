@@ -123,6 +123,13 @@
     "references": {
       "type": "patron-b2b-references",
       "blocks": {
+        "reference_JhKbGt": {
+          "type": "reference",
+          "settings": {
+            "name": "MediaMarkt",
+            "image": "shopify://shop_images/Logo_Mo-Torres.png"
+          }
+        },
         "reference_QccEWR": {
           "type": "reference",
           "settings": {
@@ -181,6 +188,7 @@
         }
       },
       "block_order": [
+        "reference_JhKbGt",
         "reference_QccEWR",
         "reference_Enw9dT",
         "reference_U8qhKV",
@@ -450,13 +458,17 @@
         "full_width": true,
         "background": "#ffffff",
         "text_color": "#1a1a1a",
+        "accent_color": "#632b99",
+        "placeholder_bg": "#f5f6f8",
+        "star_color": "#6dd972",
         "subheading": "Realisierte Projekte",
         "title": "Socken Liebe.",
         "content": "<p>Unternehmen, Künstler und Vereine sehen direkt einen passenden Anwendungsfall.</p>",
         "feature_image": "shopify://shop_images/MediaMarkt_Weihnachtssocke_Sample.jpg",
         "feature_category": "Kunden- & Weihnachtsaktion",
         "feature_title": "MediaMarkt",
-        "feature_text": "<p>Individuelle Weihnachtssocken als Aktionsbeigabe zu MediaMarkt-Gutscheinen. Zusätzlich wurden für eine Fußball-WM passende Aktionssocken umgesetzt.</p>"
+        "feature_text": "<p>Individuelle Weihnachtssocken als Aktionsbeigabe zu MediaMarkt-Gutscheinen. Zusätzlich wurden für eine Fußball-WM passende Aktionssocken umgesetzt.</p>",
+        "rating_text": "Ausgezeichnet bewertet von Unternehmen, Vereinen und Künstlern"
       }
     },
     "giftsets": {
