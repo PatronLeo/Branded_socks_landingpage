@@ -196,7 +196,7 @@
         "text_color": "#ffffff",
         "label": "Bereits umgesetzt für starke Marken",
         "speed": 28,
-        "logo_filter": "brightness(0) invert(1)"
+        "logo_filter": "none"
       }
     },
     "services": {
