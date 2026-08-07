@@ -200,8 +200,8 @@
       ],
       "settings": {
         "full_width": true,
-        "background": "#AE9AC2",
-        "text_color": "#ffffff",
+        "background": "#E4DDEC",
+        "text_color": "#412752",
         "label": "Bereits umgesetzt für starke Marken",
         "speed": 28,
         "logo_filter": "none"
