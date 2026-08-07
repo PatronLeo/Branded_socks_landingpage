@@ -200,8 +200,8 @@
       ],
       "settings": {
         "full_width": true,
-        "background": "#E4DDEC",
-        "text_color": "#632B99",
+        "background": "#e4ddec",
+        "text_color": "#632b99",
         "label": "Bereits umgesetzt für starke Marken",
         "speed": 28,
         "logo_filter": "none"
@@ -281,7 +281,7 @@
         "full_width": true,
         "background": "#f2f1f1",
         "text_color": "#1a1a1a",
-        "accent_color": "#632b99",
+        "accent_color": "#2E025A",
         "tile_background": "#ffffff",
         "divider_color": "#ececec",
         "subheading": "Das komplette Leistungspaket",
