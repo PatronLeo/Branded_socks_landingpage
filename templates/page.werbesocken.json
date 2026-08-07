@@ -71,7 +71,7 @@
         "s1": {
           "type": "stat",
           "settings": {
-            "title": "Ab 100 Paar",
+            "title": "Ab 50 Paar",
             "number": "100+",
             "text": "Mindestbestellmenge, Großmengen möglich",
             "icon": "package"
@@ -534,7 +534,7 @@
         "n1": {
           "type": "benefit",
           "settings": {
-            "title": "Ab 100 Paar",
+            "title": "Ab 50 Paar",
             "text": "Mindestbestellmenge, Großmengen möglich"
           }
         },
@@ -610,7 +610,7 @@
           "type": "item",
           "settings": {
             "question": "Ab welcher Stückzahl können individuelle Socken produziert werden?",
-            "answer": "<p>Ab 100 Paar pro Design und Größenbereich. Größere Mengen sind jederzeit möglich.</p>"
+            "answer": "<p>Ab 50 Paar pro Design und Größenbereich. Größere Mengen sind jederzeit möglich.</p>"
           }
         },
         "f2": {
