@@ -47,7 +47,7 @@
         "full_width": true,
         "background": "#ffffff",
         "text_color": "#1a1a1a",
-        "accent_color": "#856B9F",
+        "accent_color": "#493158",
         "media_bg": "#42195a",
         "subheading": "Corporate Gifts & Socks",
         "title": "Mehr als nur individuelle Socken.",
@@ -200,7 +200,7 @@
       ],
       "settings": {
         "full_width": true,
-        "background": "#42195a",
+        "background": "#AE9AC2",
         "text_color": "#ffffff",
         "label": "Bereits umgesetzt für starke Marken",
         "speed": 28,
